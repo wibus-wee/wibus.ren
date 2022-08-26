@@ -1,4 +1,5 @@
 {
+  "labels": ["dependencies"],
   "extends": [
     "config:base",
     ":automergePatch",
@@ -13,7 +14,8 @@
         "major"
       ],
       "labels": [
-        "UPDATE-MAJOR"
+        "UPDATE-MAJOR",
+        "dependencies"
       ]
     }
   ],
