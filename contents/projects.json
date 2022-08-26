@@ -19,7 +19,7 @@
     { "symbol": "M", "name": "Mix", "repo": "wibus-wee/Mix", "description": "A blog and diary in one theme"},
     { "symbol": "🌈", "name": "Wiather", "repo": "wibus-wee/Typecho-Plugin-Wiather", "description": "A Weather Plugin for Handsome"},
     { "symbol": "🪆", "name": "Live2D", "repo": "wibus-wee/Typecho-Plugin-Live2D", "description": "A Live2D Plugin basic on 爆胎"},
-    { "symbol": "🔔", "name": "HandsomeCall", "repo": "wibus-wee/Typecho-Plugin-HandsomeCall", "description": "A message notice plugin for Handsome"},
+    { "symbol": "🔔", "name": "HandsomeCall", "repo": "wibus-wee/Typecho-Plugin-HandsomeCall", "description": "A message notice plugin for Handsome"}
   ],
   "Starter Templates": [
     { "icon": "./icon/ts.svg", "name": "Typescript Starter", "repo": "wibus-wee/starter-ts", "description": "Starter template for TypeScript library"},

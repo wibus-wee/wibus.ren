@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-08-26 18:49:23
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-26 20:59:55
+ * @LastEditTime: 2022-08-26 21:42:43
  * Coding With IU
  */
 
@@ -11,6 +11,7 @@ import { NextPage } from "next";
 import styles from "./index.module.css";
 import clsx from "clsx";
 import { readFile } from "fs/promises";
+import { SEO } from "../../components/others/SEO";
 
 export const getStaticProps = async () => {
   const data = await readFile("./contents/projects.json", "utf-8");
@@ -24,6 +25,9 @@ export const getStaticProps = async () => {
 const Projects: NextPage<any> = (props) => {
   return (
     <>
+    <SEO 
+      title="Projects"
+    />
       <div className="prose m-auto mb-8">
         <h1 className="mb-0">Projects</h1>
         <p className="opacity-50 italic mt-[-1.5rem]">
