@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-08-26 18:49:23
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-26 20:07:12
+ * @LastEditTime: 2022-08-26 20:55:21
  * Coding With IU
  */
 
@@ -14,7 +14,6 @@ import { readFile } from "fs/promises";
 
 export const getStaticProps = async () => {
   const data = await readFile("./contents/projects.json", "utf-8");
-  console.log(data);
   return {
     props: {
       data: JSON.parse(data),
@@ -23,7 +22,6 @@ export const getStaticProps = async () => {
 }
 
 const Projects: NextPage<any> = (props) => {
-  console.log(props);
   return (
     <>
       <div className="prose m-auto mb-8">
@@ -44,11 +42,11 @@ const Projects: NextPage<any> = (props) => {
                       <a href={item.repo ? `https://github.com/${item.repo}` : item.url} className={clsx(styles.item, "relative flex items-center")}>
                       <div className="pt-2 pr-5">
                         <div className="text-3xl opacity-50" style={{
-                          mask: `${item.icon ? `url(${item.icon})` : "S"} no-repeat`,
-                          maskSize: "100% 100%",
-                          WebkitMask: `${item.icon ? `url(${item.icon})` : "S"} no-repeat`,
-                          WebkitMaskSize: "100% 100%",
-                          backgroundColor: "currentColor",
+                          // mask: `${item.icon ? `url(${item.icon})` : "S"} no-repeat`,
+                          // maskSize: "100% 100%",
+                          background: `${item.icon ? `url(${item.icon})` : ""} 0% 0% / 100% 100% no-repeat`,
+                          // WebkitMaskSize: "100% 100%",
+                          color: "currentColor",
                           display: "inline-block",
                           height: "1.2em",
                           width: "1.2em",
