@@ -1,12 +1,12 @@
 {
   "Starter Templates": [
-    { "icon": "./icons/ts.svg", "name": "Typescript Starter", "repo": "wibus-wee/starter-ts", "description": "Starter template for TypeScript library"},
+    { "icon": "./icon/ts.svg", "name": "Typescript Starter", "repo": "wibus-wee/starter-ts", "description": "Starter template for TypeScript library"},
     { "icon": "https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png", "name": "Next.js TS Starter", "repo": "wibus-wee/nextjs-ts-starter", "description": "Easy to create Next.JS projects with TS"},
-    { "icon": "./icons/react.svg", "name": "React.js TS Starter", "repo": "wibus-wee/react-ts-starter", "description": "A React + TypeScript Starter Template"},
-    { "icon": "./icons/typecho.svg", "name": "Typecho Plugin Template", "repo": "wibus-wee/Typecho-Plugin-Template", "description": "Eazy init Typecho Plugin repo"},
-    { "icon": "./icons/typecho.svg", "name": "Typecho Theme Template", "repo": "wibus-wee/Typecho-Theme-Template", "description": "it can easyly to make a typecho theme, but follow my Strategy"}
+    { "icon": "./icon/react.svg", "name": "React.js TS Starter", "repo": "wibus-wee/react-ts-starter", "description": "A React + TypeScript Starter Template"},
+    { "icon": "./icon/typecho.svg", "name": "Typecho Plugin Template", "repo": "wibus-wee/Typecho-Plugin-Template", "description": "Eazy init Typecho Plugin repo"},
+    { "icon": "./icon/typecho.svg", "name": "Typecho Theme Template", "repo": "wibus-wee/Typecho-Theme-Template", "description": "it can easyly to make a typecho theme, but follow my Strategy"}
   ],
   "Configurations": [
-    { "icon": "./icons/Sbar.svg", "name": "Sketchybar Dotfile", "repo": "wibus-wee/sketchybar-dotfile"}
+    { "icon": "./icon/Sbar.svg", "name": "Sketchybar Dotfile", "repo": "wibus-wee/sketchybar-dotfile"}
   ]
 }
