@@ -1,9 +1,9 @@
 /*
- * @FilePath: /nx-theme-tiny/components/others/SEO/index.tsx
+ * @FilePath: /iucky.cn/components/others/SEO/index.tsx
  * @author: Wibus
  * @Date: 2022-08-09 14:27:23
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-09 14:40:24
+ * @LastEditTime: 2022-08-26 20:23:57
  * Coding With IU
  */
 import merge from 'lodash-es/merge'
@@ -13,8 +13,6 @@ import type { NextSeoProps } from 'next-seo'
 import { NextSeo } from 'next-seo'
 import type { OpenGraph } from 'next-seo/lib/types'
 import type { FC } from 'react'
-import { useSnapshot } from 'valtio'
-import appState from '../../../states/appState'
 
 // import { useInitialData, useThemeConfig } from '~/hooks/use-initial-data'
 // import { getRandomImage } from '~/utils/images'
@@ -29,37 +27,31 @@ type SEOProps = {
 
 export const SEO: FC<SEOProps> = observer((props) => {
   const { title, description, openGraph, ...rest } = props
-  const { aggregate } = useSnapshot(appState) as any
-  const {
-    urls: { web_url },
-    sites,
-    user,
-  } = aggregate.aggregatedData
-  const Title = `${title} - ${sites.title}`
+  const Title = `${title} - 'Wibus`
 
   return (
     <NextSeo
       {...{
         title,
-        titleTemplate: `%s - ${sites.title}`,
+        titleTemplate: `%s - Wibus`,
         openGraph: merge(
           {
             profile: {
-              username: user.name || user.username,
+              username: "Wibus",
             },
             type: 'article',
             locale: 'zh-cn',
-            site_name: sites.title || '',
+            site_name: 'Wibus',
             description:
-              description || sites.description || '',
+              description || 'Just Uaeua',
             article: {
-              authors: [user.name || (sites.name as string)],
+              authors: ["Wibus"],
             },
             title: Title,
             images: [
               {
-                url: sample(user.avatar),
-                alt: `${title} - ${sites.title}`,
+                url: sample("https://github.com/wibus-wee.png"),
+                alt: `${title} - Wibus`,
               },
             ],
           } as OpenGraph,
@@ -67,12 +59,10 @@ export const SEO: FC<SEOProps> = observer((props) => {
         ),
         description:
           description ||
-          sites.description ||
-          user.introduce ||
-          '',
+          'Just Uaeua',
         twitter: {
           cardType: 'summary',
-          site: web_url,
+          site: "https://iucky.cn",
         },
 
         ...rest,
