@@ -5,16 +5,6 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const plugins = []
 
-if (isProd) {
-  plugins.push([
-    require('next-pwa'),
-    {
-      pwa: {
-        dest: 'public',
-      },
-    },
-  ])
-}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withPlugins(plugins, {
