@@ -30,14 +30,7 @@ const nextConfig = withPlugins(plugins, {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  async rewrites() {
-
-    return {
-      fallback: [
-        { source: '/:page*/:slug*', destination: '/posts/:page*/:slug*' },
-      ],
-    }
-  }
+  
 })
 
 module.exports = nextConfig

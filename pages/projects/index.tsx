@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-08-26 18:49:23
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-26 20:55:21
+ * @LastEditTime: 2022-08-26 20:59:55
  * Coding With IU
  */
 
@@ -51,7 +51,9 @@ const Projects: NextPage<any> = (props) => {
                           height: "1.2em",
                           width: "1.2em",
                           verticalAlign: "text-bottom",
-                        }}></div>
+                        }}>
+                          {!item.icon ? item.symbol || null : null}
+                        </div>
                       </div>
                       <div className="flex-auto">
                         <div>{item.name}</div>
