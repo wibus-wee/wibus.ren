@@ -4,8 +4,8 @@
     { "symbol": "🥰", "name": "Admin", "repo": "nx-space/nx-admin", "description": "Powerful Admin Dashboard Just So So."}
   ],
   "NEXT Ecosystem": [
-    { "symbol": "🎈", "name": "Single", "repo": "nx-space/nx-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
-    { "symbol": "✏️", "name": "Tiny", "repo": "nx-space/nx-theme-tiny", "description": "A simple, clean, and minimalistic theme"},
+    { "symbol": "🎈", "name": "Single Theme", "repo": "nx-space/nx-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
+    { "symbol": "✏️", "name": "Tiny Theme", "repo": "nx-space/nx-theme-tiny", "description": "A simple, clean, and minimalistic theme"},
     { "symbol": "💬", "name": "nx-comments-wc", "repo": "nx-space/nx-comments-wc", "description": "Comments Component for front-end themes"},
     { "icon": "./icon/react.svg", "name": "nx-comments-react", "repo": "nx-space/nx-comments-react", "description": "React.JS Comments Component for front-end themes"}
   ],
@@ -30,5 +30,8 @@
   ],
   "Configurations": [
     { "icon": "./icon/Sbar.svg", "name": "Sketchybar Dotfile", "repo": "wibus-wee/sketchybar-dotfile"}
+  ],
+  "participation": [
+    { "icon": "https://getutm.app/assets/appicon.png", "name": "UTM", "repo": "utmapp/utm", "description": "Running other operating systems on your iPhone or iPad"}
   ]
 }

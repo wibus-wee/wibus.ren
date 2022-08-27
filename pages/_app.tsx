@@ -47,7 +47,7 @@ function App({ Component, pageProps }) {
       <main className="px-7 py-10">
         <Component {...pageProps} />
       </main>
-      <Plum />
+      {/* <Plum /> */}
     </>
   )
 }
