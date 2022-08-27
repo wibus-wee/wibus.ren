@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises'
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -28,6 +29,12 @@ const Home: NextPage = (props: any) => {
           <ReactMarkdown
             rehypePlugins={[rehypeRaw]}
             remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ href, children }) => (
+              <Link href={href || "#"}>
+                <span>{children}</span>
+                </Link>),
+            }}
           >
             {props.content}
           </ReactMarkdown>
