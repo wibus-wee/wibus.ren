@@ -1,10 +1,10 @@
 import { readFile } from 'fs/promises'
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
-import rehypeRaw from 'rehype-raw'
-import remarkGfm from 'remark-gfm'
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
+
+const Markdown = dynamic(() => import('../components/widgets/Markdown'), { ssr: false })
 
 export const getStaticProps = async () => {
   const content = await readFile('./contents/readme.md', 'utf8')
@@ -26,18 +26,9 @@ const Home: NextPage = (props: any) => {
       <div className="prose m-auto mb-8"><h1 className="mb-0">Wibus</h1></div>
       <article>
         <div className="prose m-auto">
-          <ReactMarkdown
-            rehypePlugins={[rehypeRaw]}
-            remarkPlugins={[remarkGfm]}
-            components={{
-              a: ({ href, children }) => (
-              <Link href={href || "#"}>
-                <span>{children}</span>
-                </Link>),
-            }}
-          >
-            {props.content}
-          </ReactMarkdown>
+          <Suspense >
+            <Markdown content={props.content} />
+          </Suspense>
         </div>
       </article>
     </>

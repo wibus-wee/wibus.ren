@@ -1,7 +1,7 @@
 {
   "NEXT Basic Requirements": [
-    { "symbol": "🎆", "name": "Core", "repo": "nx-space/core", "description": "Forever to the future of CMS blogging system"},
-    { "symbol": "🥰", "name": "Admin", "repo": "nx-space/nx-admin", "description": "Powerful Admin Dashboard Just So So."}
+    { "icon": "./icon/nx.svg", "name": "Core", "repo": "nx-space/core", "description": "Forever to the future of CMS blogging system"},
+    { "icon": "./icon/nx.svg", "name": "Admin", "repo": "nx-space/nx-admin", "description": "Powerful Admin Dashboard Just So So."}
   ],
   "NEXT Ecosystem": [
     { "symbol": "🎈", "name": "Single Theme", "repo": "nx-space/nx-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
