@@ -4,6 +4,7 @@ import { useCallback, useEffect } from 'react'
 import { message } from 'react-message-popup'
 import QP from 'qier-progress'
 import Header from '../components/layouts/Header'
+import Plum from '../components/widgets/Plum'
 
 function App({ Component, pageProps }) {
 
@@ -46,6 +47,7 @@ function App({ Component, pageProps }) {
       <main className="px-7 py-10">
         <Component {...pageProps} />
       </main>
+      <Plum />
     </>
   )
 }

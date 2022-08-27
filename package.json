@@ -44,6 +44,8 @@
   },
   "dependencies": {
     "@icon-park/react": "1.4.2",
+    "@vue/runtime-core": "^3.2.37",
+    "@vueuse/core": "9.1.1",
     "cross-env": "7.0.3",
     "framer-motion": "7.1.0",
     "lodash": "4.17.21",
@@ -63,10 +65,12 @@
     "react-message-popup": "1.0.0-alpha.2",
     "react-syntax-highlighter": "15.5.0",
     "react-use": "17.4.0",
+    "reactivue": "0.4.4",
     "rehype-katex": "6.0.2",
     "rehype-raw": "6.1.1",
     "remark-gfm": "3.0.1",
-    "valtio": "1.6.3"
+    "valtio": "1.6.3",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@innei-util/eslint-config-react-ts": "0.8.2",
@@ -79,6 +83,7 @@
     "@types/react-lazyload": "3.2.0",
     "@types/react-syntax-highlighter": "15.5.4",
     "autoprefixer": "10.4.8",
+    "babel-plugin-module-resolver": "4.1.0",
     "clsx": "1.2.1",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.5",

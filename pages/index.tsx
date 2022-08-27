@@ -22,7 +22,6 @@ const Home: NextPage = (props: any) => {
         title={"Wibus"}
         description={"Just Uaeua"}
       />
-      {/* <Plum /> */}
       <div className="prose m-auto mb-8"><h1 className="mb-0">Wibus</h1></div>
       <article>
         <div className="prose m-auto">
