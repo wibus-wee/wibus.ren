@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-08-07 21:00:31
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-26 17:05:44
+ * @LastEditTime: 2022-08-28 20:23:13
  * Coding With IU
  */
 
@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="icon" type="image/png" href="/favicon.png" />
+          <script async defer data-website-id="ec4a742f-f950-4d87-94ea-d57920decb44" src="https://umami.iucky.cn/umami.js"></script>
 
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <link rel="apple-touch-startup-image" href="/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
