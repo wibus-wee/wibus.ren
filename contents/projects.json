@@ -1,4 +1,7 @@
 {
+  "Upcoming": [
+    { "icon": "./icon/documents-creater.svg", "name": "Documents Creater", "repo": "wibus-wee/documents-creater", "description": "A Document Creater with blog, power by astro."}
+  ],
   "NEXT Basic Requirements": [
     { "icon": "./icon/nx.svg", "name": "Core", "repo": "nx-space/core", "description": "Forever to the future of CMS blogging system"},
     { "icon": "./icon/nx.svg", "name": "Admin", "repo": "nx-space/nx-admin", "description": "Powerful Admin Dashboard Just So So."}
