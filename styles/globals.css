@@ -65,11 +65,23 @@ a.item {
 }
 
 @media (prefers-color-scheme: dark) {
+  .prose {
+    --tw-prose-headings: rgb(219, 218, 218)
+  }
   html {
     color-scheme: dark;
   }
   body {
     color: #d4d4d4;
     background: black;
+  }
+  .prose {
+    color: rgb(156, 156, 156) !important;
+  }
+  .prose h1 {
+    color: rgb(219, 218, 218);
+  }
+  .prose :where(a):not(:where([class~="not-prose"] *)){
+    color: rgb(219, 218, 218);
   }
 }
