@@ -35,7 +35,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-markdown: 8.0.3
-  react-message-popup: 1.0.0-alpha.2
+  react-message-popup: 1.0.0-alpha.4
   react-use: 17.4.0
   rehype-raw: 6.1.1
   remark-gfm: 3.0.1
@@ -56,7 +56,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.3_7v64pk2mkrohwh22gx7lrz5ive
-  react-message-popup: 1.0.0-alpha.2_biqbaboplfbrettd7655fr4n2y
+  react-message-popup: 1.0.0-alpha.4_biqbaboplfbrettd7655fr4n2y
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
   rehype-raw: 6.1.1
   remark-gfm: 3.0.1
@@ -5373,9 +5373,8 @@ packages:
       - supports-color
     dev: false
 
-  /react-message-popup/1.0.0-alpha.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-YQiYMTu+qnlmHHDgTogg8PyDGd6jBxvcOBnioRzxrzOBkLr8yKhbXee7kH22DXghlXCbBZBHNvOdCEUMrvmE7Q==}
-    engines: {pnpm: '>=6'}
+  /react-message-popup/1.0.0-alpha.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-D0e+RScG08BRcuVxb5RXb9hcEUTfQeainEDsNXo7dx2/t0MMh8mSmYHVF6QOoyTWF+b6NwKmeaaQA/sw7kGVEg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
