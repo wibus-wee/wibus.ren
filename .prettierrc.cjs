@@ -1,5 +1,5 @@
 /*
- * @FilePath: /nx-theme-tiny/.prettierrc.cjs
+ * @FilePath: /mog-theme-tiny/.prettierrc.cjs
  * @author: Wibus
  * @Date: 2022-08-09 13:14:13
  * @LastEditors: Wibus

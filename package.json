@@ -1,16 +1,16 @@
 {
-  "name": "nx-theme-tiny",
+  "name": "mog-theme-tiny",
   "version": "0.2.1",
   "private": true,
   "description": "A simple, clean, and minimalistic theme for NEXT.",
   "author": "Wibus <https://iucky.cn>",
   "license": "AGPLv3",
   "repository": {
-    "directory": "nx-space/nx-theme-tiny",
-    "url": "https://github.com/nx-space/nx-theme-tiny"
+    "directory": "mogland/mog-theme-tiny",
+    "url": "https://github.com/mogland/mog-theme-tiny"
   },
-  "homepage": "https://github.com/nx-space/nx-theme-tiny#readme",
-  "issues": "https://github.com/nx-space/nx-theme-tiny/issues",
+  "homepage": "https://github.com/mogland/mog-theme-tiny#readme",
+  "issues": "https://github.com/mogland/mog-theme-tiny/issues",
   "engines": {
     "node": ">=16"
   },

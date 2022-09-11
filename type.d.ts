@@ -1,5 +1,5 @@
 /*
- * @FilePath: /nx-theme-tiny/type.d.ts
+ * @FilePath: /mog-theme-tiny/type.d.ts
  * @author: Wibus
  * @Date: 2022-08-07 21:14:15
  * @LastEditors: Wibus

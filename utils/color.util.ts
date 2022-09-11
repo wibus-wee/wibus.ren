@@ -1,5 +1,5 @@
 /*
- * @FilePath: /nx-theme-tiny/utils/color.util.ts
+ * @FilePath: /mog-theme-tiny/utils/color.util.ts
  * @author: Wibus
  * @Date: 2022-08-08 17:22:12
  * @LastEditors: Wibus

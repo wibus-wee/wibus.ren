@@ -1,5 +1,5 @@
 /*
- * @FilePath: /nx-theme-tiny/utils/load.util.ts
+ * @FilePath: /mog-theme-tiny/utils/load.util.ts
  * @author: Innei
  * @Date: 2022-08-08 17:03:46
  * @LastEditors: Innei

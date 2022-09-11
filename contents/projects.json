@@ -2,15 +2,15 @@
   "Upcoming": [
     { "icon": "./icon/documents-creater.svg", "name": "Documents Creater", "repo": "wibus-wee/documents-creater", "description": "A Document Creater with blog, power by astro."}
   ],
-  "NEXT Basic Requirements": [
-    { "icon": "./icon/nx.svg", "name": "Core", "repo": "nx-space/core", "description": "Forever to the future of CMS blogging system"},
-    { "icon": "./icon/nx.svg", "name": "Admin", "repo": "nx-space/nx-admin", "description": "Powerful Admin Dashboard Just So So."}
+  "Mog Basic Requirements": [
+    { "icon": "./icon/mog.png", "name": "Core", "repo": "mogland/core", "description": "Forever to the future of CMS blogging system"},
+    { "icon": "./icon/mog.png", "name": "Admin", "repo": "mogland/mog-admin", "description": "Powerful Admin Dashboard Just So So."}
   ],
-  "NEXT Ecosystem": [
-    { "symbol": "🎈", "name": "Single Theme", "repo": "nx-space/nx-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
-    { "symbol": "✏️", "name": "Tiny Theme", "repo": "nx-space/nx-theme-tiny", "description": "A simple, clean, and minimalistic theme"},
-    { "symbol": "💬", "name": "nx-comments-wc", "repo": "nx-space/nx-comments-wc", "description": "Comments Component for front-end themes"},
-    { "icon": "./icon/react.svg", "name": "nx-comments-react", "repo": "nx-space/nx-comments-react", "description": "React.JS Comments Component for front-end themes"}
+  "Mog Ecosystem": [
+    { "symbol": "🎈", "name": "Single Theme", "repo": "mogland/mog-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
+    { "symbol": "✏️", "name": "Tiny Theme", "repo": "mogland/mog-theme-tiny", "description": "A simple, clean, and minimalistic theme"},
+    { "symbol": "💬", "name": "mog-comments-wc", "repo": "mogland/mog-comments-wc", "description": "Comments Component for front-end themes"},
+    { "icon": "./icon/react.svg", "name": "mog-comments-react", "repo": "mogland/mog-comments-react", "description": "React.JS Comments Component for front-end themes"}
   ],
   "Mix Space Ecosystem": [
     { "symbol": "📄", "name": "Mix Space Documentation", "repo": "mx-space/docs", "description": "Documentation for Mix Space"}
