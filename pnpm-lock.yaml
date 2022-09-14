@@ -10,7 +10,7 @@ specifiers:
   '@types/react-dom': 18.0.6
   '@types/react-lazyload': 3.2.0
   '@types/react-syntax-highlighter': 15.5.5
-  autoprefixer: 10.4.10
+  autoprefixer: 10.4.11
   babel-plugin-module-resolver: 4.1.0
   clsx: 1.2.1
   cross-env: 7.0.3
@@ -71,7 +71,7 @@ devDependencies:
   '@types/react-dom': 18.0.6
   '@types/react-lazyload': 3.2.0
   '@types/react-syntax-highlighter': 15.5.5
-  autoprefixer: 10.4.10_postcss@8.4.16
+  autoprefixer: 10.4.11_postcss@8.4.16
   babel-plugin-module-resolver: 4.1.0
   clsx: 1.2.1
   eslint: 8.23.1
@@ -2178,8 +2178,8 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /autoprefixer/10.4.10_postcss@8.4.16:
-    resolution: {integrity: sha512-nMaiDARyp1e74c8IeAXkr+BmFKa8By4Zak7tyaNPF09Iu39WFpNXOWrVirmXjKr+5cOyERwvtbMOLYz6iBJYgQ==}
+  /autoprefixer/10.4.11_postcss@8.4.16:
+    resolution: {integrity: sha512-5lHp6DgRodxlBLSkzHOTcufWFflH1ewfy2hvFQyjrblBFlP/0Yh4O/Wrg4ow8WRlN3AAUFFLAQwX8hTptzqVHg==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
