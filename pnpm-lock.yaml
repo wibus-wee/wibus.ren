@@ -27,7 +27,7 @@ specifiers:
   next-compose-plugins: 2.2.1
   next-pwa: 5.6.0
   next-seo: 5.5.0
-  ohmyfetch: 0.4.18
+  ohmyfetch: 0.4.19
   postcss: 8.4.16
   postcss-nesting: 10.1.10
   prettier: 2.7.1
@@ -51,7 +51,7 @@ dependencies:
   mobx-react-lite: 3.4.0_qrr2ojv4n7h7ey2xj7njerqqr4
   next: 12.3.0_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.5.0_c3hne4hwj64hb7tofigd3bvkji
-  ohmyfetch: 0.4.18
+  ohmyfetch: 0.4.19
   qier-progress: 1.0.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -4843,8 +4843,8 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /node-fetch-native/0.1.4:
-    resolution: {integrity: sha512-10EKpOCQPXwZVFh3U1ptOMWBgKTbsN7Vvo6WVKt5pw4hp8zbv6ZVBZPlXw+5M6Tyi1oc1iD4/sNPd71KYA16tQ==}
+  /node-fetch-native/0.1.5:
+    resolution: {integrity: sha512-4NYY0JOTYFsahDjKy4gId6uuf7TPzkIDSDMuvtmlFd2Jf25tj9fQsDD5+kLdzM7sm6BbG8lL/154tdrsgN25Zw==}
     dev: false
 
   /node-releases/2.0.6:
@@ -4930,13 +4930,13 @@ packages:
       es-abstract: 1.20.1
     dev: true
 
-  /ohmyfetch/0.4.18:
-    resolution: {integrity: sha512-MslzNrQzBLtZHmiZBI8QMOcMpdNFlK61OJ34nFNFynZ4v+4BonfCQ7VIN4EGXvGGq5zhDzgdJoY3o9S1l2T7KQ==}
+  /ohmyfetch/0.4.19:
+    resolution: {integrity: sha512-OH2xVeRPNsHkx+JFdq1ewe9EwVDfTrv6lsBHpIx8wIWXowP5FyLhhYVaXIVlPsW542rt7gmwK14FwIDWUXEO+Q==}
     dependencies:
       destr: 1.1.1
-      node-fetch-native: 0.1.4
+      node-fetch-native: 0.1.5
       ufo: 0.8.5
-      undici: 5.8.1
+      undici: 5.10.0
     dev: false
 
   /once/1.4.0:
@@ -6219,8 +6219,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici/5.8.1:
-    resolution: {integrity: sha512-iDRmWX4Zar/4A/t+1LrKQRm102zw2l9Wgat3LtTlTn8ykvMZmAmpq9tjyHEigx18FsY7IfATvyN3xSw9BDz0eA==}
+  /undici/5.10.0:
+    resolution: {integrity: sha512-c8HsD3IbwmjjbLvoZuRI26TZic+TSEe8FPMLLOkN1AfYRhdjnKBU6yL+IwcSCbdZiX4e5t0lfMDLDCqj4Sq70g==}
     engines: {node: '>=12.18'}
     dev: false
 
