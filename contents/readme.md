@@ -12,4 +12,6 @@ Hi! 我是 wibus！一位自称的钢琴演奏家和歌手. 曾是 [Typecho](htt
 
 ---
 
-Find me on [GitHub](https://github.com/wibus-wee), [Twitter](https://twitter.com/wibus_wee). <br> Mail me at [wibus@qq.com](mailto:wibus@qq.com)
+Find me on [GitHub](https://github.com/wibus-wee), [Twitter](https://twitter.com/wibus_wee). <br> Mail me at [wibus@qq.com](mailto:wibus@qq.com) 
+
+Style from [antfu](https://antfu.me)
