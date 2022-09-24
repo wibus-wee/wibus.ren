@@ -1,10 +1,6 @@
 {
-  "Upcoming": [
-    { "icon": "./icon/documents-creater.svg", "name": "Documents Creater", "repo": "wibus-wee/documents-creater", "description": "A Document Creater with blog, power by astro."}
-  ],
   "Mog Basic Requirements": [
-    { "icon": "./icon/mog.png", "name": "Core", "repo": "mogland/core", "description": "Forever to the future of CMS blogging system"},
-    { "icon": "./icon/mog.png", "name": "Admin", "repo": "mogland/mog-admin", "description": "Powerful Admin Dashboard Just So So."}
+    { "icon": "./icon/mog.png", "name": "Core", "repo": "mogland/core", "description": "一款弹性的模块化 CMS 博客系统"}
   ],
   "Mog Ecosystem": [
     { "symbol": "🎈", "name": "Single Theme", "repo": "mogland/mog-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
@@ -19,10 +15,12 @@
     { "symbol": "🏮", "name": "Lantern", "repo": "wibus-wee/wc-lantern", "description": "Lantern for Web Components"}
   ],
   "Typecho Ecosystem": [
+    { "symbol": "S", "name": "STY", "repo": "", "description": "一款集成多个样式部件于一体的Typecho主题！"},
     { "symbol": "M", "name": "Mix", "repo": "wibus-wee/Mix", "description": "A blog and diary in one theme"},
     { "symbol": "🌈", "name": "Wiather", "repo": "wibus-wee/Typecho-Plugin-Wiather", "description": "A Weather Plugin for Handsome"},
     { "symbol": "🪆", "name": "Live2D", "repo": "wibus-wee/Typecho-Plugin-Live2D", "description": "A Live2D Plugin basic on 爆胎"},
-    { "symbol": "🔔", "name": "HandsomeCall", "repo": "wibus-wee/Typecho-Plugin-HandsomeCall", "description": "A message notice plugin for Handsome"}
+    { "symbol": "🔔", "name": "HandsomeCall", "repo": "wibus-wee/Typecho-Plugin-HandsomeCall", "description": "A message notice plugin for Handsome"},
+    { "symbol": "🚫", "name": "Disable-Typecho-Frontend", "repo": "wibus-wee/Disable-Typecho-Frontend", "description": "A completely disabled front-end case, can be a full site maintenance plug-in"}
   ],
   "Starter Templates": [
     { "icon": "./icon/ts.svg", "name": "Typescript Starter", "repo": "wibus-wee/starter-ts", "description": "Starter template for TypeScript library"},
