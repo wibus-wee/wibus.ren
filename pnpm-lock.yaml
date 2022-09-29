@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@innei-util/eslint-config-react-ts': 0.8.2
-  '@innei/prettier': 0.9.4
+  '@innei/prettier': 0.9.5
   '@tailwindcss/typography': 0.5.7
   '@types/lodash': 4.14.186
   '@types/node': 18.6.4
@@ -63,7 +63,7 @@ dependencies:
 
 devDependencies:
   '@innei-util/eslint-config-react-ts': 0.8.2_ypn2ylkkyfa5i233caldtndbqa
-  '@innei/prettier': 0.9.4
+  '@innei/prettier': 0.9.5
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
   '@types/lodash': 4.14.186
   '@types/node': 18.6.4
@@ -1370,8 +1370,8 @@ packages:
       - supports-color
     dev: true
 
-  /@innei/prettier/0.9.4:
-    resolution: {integrity: sha512-Rf5X/EqVw0iz0L4DN5MHTNiAQOq9ez/N/8sLdS9q+uCQ/vsYI64I52QNvXXM3ljSMEwSmijViF6oAbrDCHRsuA==}
+  /@innei/prettier/0.9.5:
+    resolution: {integrity: sha512-BsVsCo9ygB0DOefqwIl7okmTvN8kSiYXHANiEWcnia3z8AD+wZ69Ruv6s8JLa7Fhds0kXGnlnFaVF/1xjgCJDA==}
     dependencies:
       '@trivago/prettier-plugin-sort-imports': /@ianvs/prettier-plugin-sort-imports/3.4.2_prettier@2.7.1
       prettier: 2.7.1
