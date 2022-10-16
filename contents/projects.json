@@ -10,7 +10,7 @@
   ],
   "Koishi Ecosystem": [
     { "symbol": "📈", "name": "Deep-Danbooru", "repo": "wibus-wee/koishi-plugin-deep-danbooru", "description": "Analyzing images via deepdanbooru | 基于 DeepDanbooru 的图像分析插件"},
-    { "symbol": "🤖️", "name": "NovelAI-API", "repo": "", "description": "Special version of NovelAI Generator | NovelAI 特别 API 版本"}
+    { "symbol": "🤖️", "name": "NovelAI-API", "repo": "wibus-wee/koishi-plugin-novel-ai-api", "description": "Special version of NovelAI Generator | NovelAI 画图接口特殊版本"}
   ],
   "Mix Space Ecosystem": [
     { "symbol": "📄", "name": "Mix Space Documentation", "repo": "mx-space/docs", "description": "Documentation for Mix Space"}
