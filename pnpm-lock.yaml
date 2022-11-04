@@ -40,7 +40,7 @@ specifiers:
   rehype-raw: 6.1.1
   remark-gfm: 3.0.1
   rimraf: 3.0.2
-  tailwindcss: 3.2.1
+  tailwindcss: 3.2.2
   typescript: 4.8.4
 
 dependencies:
@@ -64,7 +64,7 @@ dependencies:
 devDependencies:
   '@innei-util/eslint-config-react-ts': 0.8.2_wyqvi574yv7oiwfeinomdzmc3m
   '@innei/prettier': 0.9.5
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
+  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.2
   '@types/lodash': 4.14.188
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -85,7 +85,7 @@ devDependencies:
   postcss-nesting: 10.2.0_postcss@8.4.18
   prettier: 2.7.1
   rimraf: 3.0.2
-  tailwindcss: 3.2.1_postcss@8.4.18
+  tailwindcss: 3.2.2_postcss@8.4.18
   typescript: 4.8.4
 
 packages:
@@ -1674,7 +1674,7 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.1:
+  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.2:
     resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -1683,7 +1683,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.1_postcss@8.4.18
+      tailwindcss: 3.2.2_postcss@8.4.18
     dev: true
 
   /@types/debug/4.1.7:
@@ -6032,8 +6032,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.2.1_postcss@8.4.18:
-    resolution: {integrity: sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==}
+  /tailwindcss/3.2.2_postcss@8.4.18:
+    resolution: {integrity: sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
