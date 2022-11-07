@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@innei-util/eslint-config-react-ts': 0.8.2
   '@innei/prettier': 0.9.5
-  '@tailwindcss/typography': 0.5.7
+  '@tailwindcss/typography': 0.5.8
   '@types/lodash': 4.14.188
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -64,7 +64,7 @@ dependencies:
 devDependencies:
   '@innei-util/eslint-config-react-ts': 0.8.2_rmayb2veg2btbq6mbmnyivgasy
   '@innei/prettier': 0.9.5
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.2
+  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.2
   '@types/lodash': 4.14.188
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -1674,8 +1674,8 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.2:
-    resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
+  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.2:
+    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
