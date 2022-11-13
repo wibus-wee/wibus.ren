@@ -1,4 +1,9 @@
 {
+  "Latest": [
+    { "icon": "./icon/mct.jpg", "name": "Mini Class Tool", "repo": "wibus-wee/mini-class-tool", "description": "Quick get course information and generate course table"},
+    { "symbol": "🍐", "name": "Nashi Experience", "repo": "wibus-wee/nashi-experience", "description": "Online nashi package experience"},
+    { "symbol": "🍐", "name": "GitHub Event Discord Listener", "repo": "wibus-wee/github-event-discord-listener", "description": "Listen to personal activity on GitHub and send to Discord"}
+  ],
   "Mog Basic Requirements": [
     { "icon": "./icon/mog.png", "name": "Core", "repo": "mogland/core", "description": "一款弹性的模块化 CMS 博客系统"}
   ],
