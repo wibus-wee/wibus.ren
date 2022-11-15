@@ -46,7 +46,7 @@
     "cross-env": "7.0.3",
     "framer-motion": "7.6.7",
     "lodash-es": "4.17.21",
-    "mobx": "6.6.2",
+    "mobx": "6.7.0",
     "mobx-react-lite": "3.4.0",
     "next": "12.3.3",
     "next-seo": "5.9.0",
