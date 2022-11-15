@@ -26,7 +26,7 @@ specifiers:
   next: 12.3.3
   next-compose-plugins: 2.2.1
   next-pwa: 5.6.0
-  next-seo: 5.9.0
+  next-seo: 5.14.1
   ohmyfetch: 0.4.21
   postcss: 8.4.19
   postcss-nesting: 10.2.0
@@ -50,7 +50,7 @@ dependencies:
   mobx: 6.6.2
   mobx-react-lite: 3.4.0_qrr2ojv4n7h7ey2xj7njerqqr4
   next: 12.3.3_biqbaboplfbrettd7655fr4n2y
-  next-seo: 5.9.0_axequwibc5yadwk55bo7ehxsoe
+  next-seo: 5.14.1_axequwibc5yadwk55bo7ehxsoe
   ohmyfetch: 0.4.21
   qier-progress: 1.0.4
   react: 18.2.0
@@ -4784,8 +4784,8 @@ packages:
       - webpack
     dev: true
 
-  /next-seo/5.9.0_axequwibc5yadwk55bo7ehxsoe:
-    resolution: {integrity: sha512-GsPXIDC9EFoFM6pkigSGMzuD/PelL8TFPlD5rKQCZfwkDNhs0unkW8sOMZ2u4RnEfxb/BBpEjQxtEeYQcgQ8jQ==}
+  /next-seo/5.14.1_axequwibc5yadwk55bo7ehxsoe:
+    resolution: {integrity: sha512-NiJeQbxYP3z+EMp52q8k3Q+OfX2+Yv2WehERDj98r2wjXxL+woKpRBdsSVYolTD0Hm8IWs42SzaISE93RoQdOw==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
