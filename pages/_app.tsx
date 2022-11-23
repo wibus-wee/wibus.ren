@@ -43,11 +43,11 @@ function App({ Component, pageProps }) {
       document.body.classList.remove('loading')
     }
   }, [])
-
+  
   return (
     <>
-      <Header />
       <Nav />
+      <Header />
       <main className="px-7 py-10">
         <Component {...pageProps} />
       </main>

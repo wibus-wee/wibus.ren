@@ -5,5 +5,15 @@
   }, {
     "text": "Projects",
     "path": "projects"
+  }],
+  "nav-right": [{
+    "name": "twitter",
+    "src": "//twitter.com/wibus_wee"
+  }, {
+    "name": "blog",
+    "src": "//blog.iucky.cn"
+  },{
+    "name": "github",
+    "src": "//github.com/wibus-wee"
   }]
 }
