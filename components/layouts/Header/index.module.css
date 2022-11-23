@@ -2,7 +2,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 56px;
-  z-index: 20;
+  z-index: 40;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,4 +59,18 @@
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-item svg path {
+  transition: all 0.2s ease-in-out;
+
+}
+
+.icon-item:hover {
+  cursor: pointer;
+}
+
+.icon-item:hover svg path{
+  fill: #000;
 }

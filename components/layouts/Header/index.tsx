@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-08-26 16:39:58
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-23 18:33:04
+ * @LastEditTime: 2022-11-23 18:45:39
  * Coding With IU
  */
 
@@ -12,10 +12,6 @@ import Link from "next/link";
 import { FC } from "react";
 import styles from "./index.module.css";
 import config from '../../../contents/config.json'
-import { GitHub } from "../../../public/iconsTS/github";
-import { Blog } from "../../../public/iconsTS/blog";
-import { Email } from "../../../public/iconsTS/email";
-import { Twitter } from "../../../public/iconsTS/twitter";
 
 const Header: FC = () => {
   return (
@@ -25,13 +21,7 @@ const Header: FC = () => {
         {
           config["nav-right"].map((item, index) => {
             return (
-              <Link href={item.src} key={index}>
-                <a className={clsx(styles["icon-item"])} target="_blank" rel="noreferrer">
-                  {
-                    item.name === "github" ? <GitHub /> : (item.name === 'twitter' ? <Twitter /> : (item.name === 'email' ? <Email /> : (item.name === 'blog' ? <Blog /> : null)))
-                  }
-                </a>
-              </Link>
+              <a href={item.src} key={index} className={clsx(styles["icon-item"])} target="_blank" rel="noreferrer" dangerouslySetInnerHTML={{ __html: item.icon }} />
             )
           })
         }
