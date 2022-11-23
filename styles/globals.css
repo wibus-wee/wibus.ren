@@ -85,3 +85,7 @@ a.item {
     color: rgb(219, 218, 218);
   }
 }
+
+html * {
+  background-attachment: scroll!important;
+}

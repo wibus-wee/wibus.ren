@@ -1,0 +1,9 @@
+{
+  "nav": [{
+    "text": "Home",
+    "path": ""
+  }, {
+    "text": "Projects",
+    "path": "projects"
+  }]
+}

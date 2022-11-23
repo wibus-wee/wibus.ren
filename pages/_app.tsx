@@ -5,6 +5,8 @@ import { message } from 'react-message-popup'
 import QP from 'qier-progress'
 import Header from '../components/layouts/Header'
 import Plum from '../components/widgets/Plum'
+import { Nav } from '../components/layouts/Nav'
+import { preloadPlay } from '../utils/play.util'
 
 function App({ Component, pageProps }) {
 
@@ -36,6 +38,7 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     try {
       registerRouterEvents()
+      preloadPlay()
     } finally {
       document.body.classList.remove('loading')
     }
@@ -44,10 +47,10 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Header />
+      <Nav />
       <main className="px-7 py-10">
         <Component {...pageProps} />
       </main>
-      <Plum />
     </>
   )
 }
