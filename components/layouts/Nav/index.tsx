@@ -3,24 +3,20 @@
  * @author: Wibus
  * @Date: 2022-11-23 13:39:59
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-23 17:12:36
+ * @LastEditTime: 2022-11-23 17:28:51
  * Coding With IU
  */
 import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import styles from "./index.module.css";
 import { motion } from "framer-motion";
 import config from '../../../contents/config.json'
 import { Play, play } from "../../../utils/play.util";
 
 export const Nav = () => {
-
-
   const router = useRouter()
-  const groupRef = useRef<HTMLDivElement>(null)
-
   const pathMatch = useMemo(() => {
     const asPath = router.asPath;
     const path = asPath.split("/")[1];
@@ -35,10 +31,8 @@ export const Nav = () => {
 
   return (
     <div className={clsx("z-40", styles.container)}>
-      <div ref={groupRef} className={styles.nav}>
-        <motion.a id="indicator" href="#" className={clsx(styles["floating-indicator"])}
-          animate={{ x: `${translatePresent}%` }}
-        />
+      <div className={styles.nav}>
+        <motion.a id="indicator" href="#" className={clsx(styles["floating-indicator"])} animate={{ x: `${translatePresent}%` }} />
         {
           config.nav.map((item, index) => {
             return (
