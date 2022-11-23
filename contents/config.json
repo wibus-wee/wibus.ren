@@ -8,12 +8,12 @@
   }],
   "nav-right": [{
     "name": "twitter",
-    "src": "//twitter.com/wibus_wee"
+    "src": "https://twitter.com/wibus_wee"
   }, {
     "name": "blog",
-    "src": "//blog.iucky.cn"
+    "src": "https://blog.iucky.cn"
   },{
     "name": "github",
-    "src": "//github.com/wibus-wee"
+    "src": "https://github.com/wibus-wee"
   }]
 }
