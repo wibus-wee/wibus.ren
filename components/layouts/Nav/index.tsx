@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-23 13:39:59
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-23 17:28:51
+ * @LastEditTime: 2022-11-24 13:54:30
  * Coding With IU
  */
 import clsx from "clsx";
@@ -30,7 +30,7 @@ export const Nav = () => {
 
 
   return (
-    <div className={clsx("z-40", styles.container)}>
+    <div className={clsx(styles.container)}>
       <div className={styles.nav}>
         <motion.a id="indicator" href="#" className={clsx(styles["floating-indicator"])} animate={{ x: `${translatePresent}%` }} />
         {
