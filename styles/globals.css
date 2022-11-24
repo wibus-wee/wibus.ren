@@ -44,20 +44,12 @@ a {
   font-weight: inherit;
   text-decoration: none;
   /* border-bottom: 1px solid rgba(125, 125, 125, .3); */
-  transition: border .3s ease-in-out;
-}
-
-.prose a::after {
-  content: "↗";
-  display: inline-block;
-  margin-left: 0.25em;
-  font-size: 0.75em;
-  line-height: 0;
-  vertical-align: middle;
+  background-image: linear-gradient(transparent 0%, transparent 50%, rgba(125, 125, 125, .3) 50%, rgba(125, 125, 125, .3) 100%);
+  transition: background-image .2s ease;
 }
 
 .prose a:hover {
-  border-bottom: 1px solid rgba(125, 125, 125, 0.6);
+  background-image: linear-gradient(transparent 0%, transparent 50%, rgba(125, 125, 125, .5) 50%, rgba(125, 125, 125, .5) 100%);
 }
 
 .prose hr {
@@ -129,6 +121,7 @@ a {
   border-bottom: 1px solid rgba(125, 125, 125, .3);
   transition: border .3s ease-in-out;
   color: #000;
+  background-image: none;
 }
 
 a.item {
