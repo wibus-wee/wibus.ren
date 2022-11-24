@@ -1,0 +1,36 @@
+.grid {
+  margin-top: 88px;
+  padding-bottom: 120px;
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  position: relative;
+  z-index: 2;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.gridItem {
+  border-radius: 32px;
+  background-color: #f7f7f9;
+}
+
+.about {
+  padding: 32px;
+  width: 672px;
+  max-width: 672px;
+}
