@@ -48,7 +48,7 @@ function App({ Component, pageProps }) {
     <div className='_iucky'>
       <Nav />
       <Header />
-      <main className="px-7 py-10">
+      <main className="px-7 py-10 z-50">
         <Component {...pageProps} />
       </main>
     </div>
