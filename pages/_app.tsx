@@ -45,13 +45,13 @@ function App({ Component, pageProps }) {
   }, [])
   
   return (
-    <>
+    <div className='_iucky'>
       <Nav />
       <Header />
       <main className="px-7 py-10">
         <Component {...pageProps} />
       </main>
-    </>
+    </div>
   )
 }
 

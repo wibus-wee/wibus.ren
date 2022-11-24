@@ -15,7 +15,7 @@ body {
 }
 
 .font-sans {
-  font-family: "Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 a {
@@ -39,7 +39,7 @@ a {
 .prose a {
   font-weight: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(125,125,125,.3);
+  border-bottom: 1px solid rgba(125, 125, 125, .3);
   transition: border .3s ease-in-out;
 }
 
@@ -60,7 +60,7 @@ a {
 a.item {
   transition: .2s all ease-out;
   text-decoration: none;
-  border-bottom: none!important;
+  border-bottom: none !important;
   opacity: .6;
 }
 
@@ -68,24 +68,50 @@ a.item {
   .prose {
     --tw-prose-headings: rgb(219, 218, 218)
   }
+
   html {
     color-scheme: dark;
   }
+
   body {
     color: #d4d4d4;
     background: black;
   }
+
   .prose {
     color: rgb(156, 156, 156) !important;
   }
+
   .prose h1 {
     color: rgb(219, 218, 218);
   }
-  .prose :where(a):not(:where([class~="not-prose"] *)){
+
+  .prose :where(a):not(:where([class~="not-prose"] *)) {
     color: rgb(219, 218, 218);
   }
 }
 
 html * {
-  background-attachment: scroll!important;
+  background-attachment: scroll !important;
+}
+
+._iucky {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
