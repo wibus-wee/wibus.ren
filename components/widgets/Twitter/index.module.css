@@ -1,0 +1,220 @@
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.innerContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+}
+
+.avatar img {
+  border-radius: 360px;
+}
+
+.nameContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.name {
+  font-family: Chirp, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.username {
+  font-family: Chirp, sans-serif;
+  color: #dfdfdf;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.link {
+  width: 56px;
+  height: 56px;
+}
+
+.link img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.iconBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: #4a99e9;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 25%);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.link {
+  width: 56px;
+  height: 56px;
+}
+
+.content {
+  margin-top: 24px;
+  position: relative;
+  z-index: 2;
+  font-family: Chirp, sans-serif;
+  color: #000;
+  font-size: 24px;
+  line-height: 135%;
+  font-weight: 400;
+  cursor: default;
+}
+
+
+.btn {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, .1);
+  border-radius: 56px;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-color: rgb(222, 222, 224);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  will-change: background-color, border-color, color;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, .3);
+  border-color: rgba(0, 0, 0, .3);
+  color: #fff;
+}
+
+.inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.text {
+  margin-bottom: 0;
+  font-family: Graphik, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+/* 
+.btn:hover .text {
+  color: #fff;
+} */
+
+.btn::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 2em;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: middle;
+}

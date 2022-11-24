@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { Grid, GridItem } from '../components/layouts/Grid'
 import Markdown from '../components/widgets/Markdown'
+import { Twitter } from '../components/widgets/Twitter'
 
 
 export const getStaticProps = async () => {
@@ -35,6 +36,14 @@ const Home: NextPage = (props: any) => {
               <Markdown content={props.content} />
             </div>
           </article>
+        </GridItem>
+        <GridItem
+          cstart={4}
+          cend={2}
+          rstart={1}
+          rend={3}
+        >
+          <Twitter />
         </GridItem>
       </Grid>
     </>
