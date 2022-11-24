@@ -30,7 +30,7 @@
 }
 
 .gridItem:not(.about) {
-  width: 328px;
+  /* width: 328px; */
   height: 328px;
   max-height: 328px;
   min-width: 328px;
@@ -59,12 +59,21 @@
 
 @media (max-width: 768px) {
   .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
+    display: block;
+  }
+
+  .gridItem {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    min-width: 100%;
+    padding: 24px;
+    position: static;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
   }
 
   .about {
