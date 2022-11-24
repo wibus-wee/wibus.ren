@@ -38,8 +38,8 @@ const Home: NextPage = (props: any) => {
           </article>
         </GridItem>
         <GridItem
-          cstart={4}
-          cend={2}
+          cstart={2}
+          cend={5}
           rstart={1}
           rend={3}
         >

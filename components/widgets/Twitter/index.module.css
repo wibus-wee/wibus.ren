@@ -218,3 +218,11 @@
   line-height: 0;
   vertical-align: middle;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  .text, .btn, .name, .content {
+    color: #fff !important;
+  }
+
+}

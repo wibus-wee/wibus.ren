@@ -3,19 +3,21 @@
  * @author: Wibus
  * @Date: 2022-11-24 18:36:41
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-24 19:29:55
+ * @LastEditTime: 2022-11-24 22:10:24
  * Coding With IU
  */
 import clsx from "clsx"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Play, play } from "../../../utils/play.util"
 import styles from "./index.module.css"
 import { motion } from "framer-motion"
+import { useDark } from "../../../hooks/useMedia";
 
 export const Twitter = () => {
 
+  const defaultColor = "#000"
   const [scale, setScale] = useState<number>(1);
-  const [color, setColor] = useState<string>("#000");
+  const [color, setColor] = useState<string>(defaultColor);
   const [grayColor, setGrayColor] = useState<string>("#949495");
 
 
@@ -60,19 +62,20 @@ export const Twitter = () => {
           animate={{ color }}
           transition={{ duration: 0.3 }}
         >
-          i start refactoring my homepage 😊
+          <p>Mog v2 的基础评论服务正在重构中！🌟</p>
+          <p>希望能尽快发布。^ - ^</p>
         </motion.div>
       </div>
 
       <TwitterReadBtn
         onMouseEnter={() => {
-          setScale(14);
+          setScale(40);
           setColor("#fff");
           setGrayColor("#dfdfdf");
         }}
         onMouseLeave={() => {
           setScale(1);
-          setColor("#000");
+          setColor(defaultColor);
           setGrayColor("#949495");
         }}
         color={color}

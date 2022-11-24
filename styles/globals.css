@@ -156,6 +156,10 @@ a.item {
   .prose :where(a):not(:where([class~="not-prose"] *)) {
     color: rgb(219, 218, 218);
   }
+
+  .prose span {
+    color: rgb(219, 218, 218);
+  }
 }
 
 html * {

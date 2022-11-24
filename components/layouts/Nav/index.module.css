@@ -91,3 +91,21 @@
 .nav-text.active {
   color: #000;
 }
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background-color: rgba(177, 177, 177, 0.164);
+  }
+
+  .nav-text {
+    color: #999;
+  }
+
+  .nav-text.active {
+    color: #fff;
+  }
+
+  .floating-indicator {
+    background-color: #333;
+  }
+}
