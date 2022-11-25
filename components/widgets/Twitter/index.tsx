@@ -3,15 +3,14 @@
  * @author: Wibus
  * @Date: 2022-11-24 18:36:41
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-24 22:10:24
+ * @LastEditTime: 2022-11-25 09:32:08
  * Coding With IU
  */
 import clsx from "clsx"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Play, play } from "../../../utils/play.util"
 import styles from "./index.module.css"
 import { motion } from "framer-motion"
-import { useDark } from "../../../hooks/useMedia";
 
 export const Twitter = () => {
 
