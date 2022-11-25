@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-23 17:04:52
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-23 17:12:16
+ * @LastEditTime: 2022-11-25 16:51:16
  * Coding With IU
  */
 
@@ -28,10 +28,13 @@ export const preloadPlay = () => {
   Object.values(Play).forEach((play) => {
     const audio = new Audio(`/audio/${play}.mp3`);
     audio.load();
+    window[play] = audio;
   });
 };
 
-export const play = (type: Play) => {
-  const audio = new Audio(`/audio/${type}.mp3`);
-  audio.play();
+export const play = (sound: Play) => {
+  if (window[sound]) {
+    window[sound].currentTime = 0;
+    window[sound].play();
+  }
 }

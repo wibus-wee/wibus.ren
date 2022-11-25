@@ -1,9 +1,9 @@
 /*
- * @FilePath: /mog-theme-tiny/type.d.ts
+ * @FilePath: /iucky.cn/type.d.ts
  * @author: Wibus
  * @Date: 2022-08-07 21:14:15
  * @LastEditors: Wibus
- * @LastEditTime: 2022-08-07 21:14:15
+ * @LastEditTime: 2022-11-25 16:49:15
  * Coding With IU
  */
 /*
@@ -15,12 +15,15 @@
  * Coding With IU
  */
 
+import { Play } from "utils/play.util"
+
 declare global {
   export interface History {
     backPath: string[]
   }
   export interface Window {
     [key: string]: any
+    [key: Play]: HTMLAudioElement
   }
 }
 
