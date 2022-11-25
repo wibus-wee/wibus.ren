@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 14:21:33
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 17:54:15
+ * @LastEditTime: 2022-11-25 19:47:15
  * Coding With IU
  */
 import clsx from 'clsx'
@@ -27,10 +27,8 @@ const Projects: NextPage<any> = (props) => {
     <div className="px-5">
       <SEO title="Projects" />
       <div className="prose m-auto mb-8">
-        <h1 className="mb-0">Projects</h1>
-        <p className="opacity-50 italic mt-[-1.5rem]">
-          List of projects I have worked on.
-        </p>
+        <h1 className="mb-0 font-extrabold">Projects</h1>
+        <p className="opacity-50 italic">List of projects I have worked on.</p>
       </div>
       <article>
         <div className="prose m-auto">
