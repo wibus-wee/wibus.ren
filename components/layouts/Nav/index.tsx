@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-23 13:39:59
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 17:20:14
+ * @LastEditTime: 2022-11-25 17:56:45
  * Coding With IU
  */
 import clsx from 'clsx'
@@ -44,7 +44,7 @@ export const Nav = () => {
         {config.nav.map((item, index) => {
           return (
             <Link
-              href={`/${item.path}`}
+              href={item.external ? item.path : `/${item.path}`}
               key={index}
               className={clsx(styles['nav-item'], 'nav-item')}
               data-index={index}
