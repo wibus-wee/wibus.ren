@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 13:46:22
+ * @LastEditTime: 2022-11-25 16:05:32
  * Coding With IU
  */
 import { Tab } from "@headlessui/react"
@@ -39,7 +39,7 @@ const PhotoDisplay = ({ photos, ...props }: {
   return (
     <div className={styles.photo}
       style={{
-        backgroundImage: `url(/photos/${photos[current].path})`,
+        backgroundImage: `url(${photos[current].path})`,
         backgroundPosition: photos[current].position,
       }}
       onClick={() => {
