@@ -14,7 +14,19 @@
   "engines": {
     "node": ">=16"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --cache --fix",
+      "prettier --ignore-path ./.gitignore --write"
+    ]
+  },
   "scripts": {
+    "prepare": "husky install",
     "prebuild": "rimraf .next",
     "predev": "rimraf .next",
     "dev": "cross-env NODE_ENV=development next dev",
@@ -23,6 +35,7 @@
     "start": "cross-env NODE_ENV=production next start",
     "lint": "next lint",
     "lint:eslint": "eslint --ext .ts,.tsx --ignore-path .gitignore . --fix",
+    "lint-staged": "lint-staged",
     "stylelint": "stylelint 'src/**/*.{css,scss}' --fix",
     "prod:pm2": "cross-env NODE_ENV=production pm2 restart ecosystem.config.js",
     "prod:stop": "pm2 stop ecosystem.config.js",
