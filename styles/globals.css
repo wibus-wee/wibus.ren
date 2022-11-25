@@ -206,3 +206,46 @@ html * {
   -ms-flex-align: center;
   align-items: center;
 }
+
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading::before {
+  opacity: 0;
+}
+
+.loading::after {
+  opacity: 0;
+}
+
+.loading {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading.loaded {
+  opacity: 1;
+}

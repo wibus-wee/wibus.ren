@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import { Router } from 'next/router'
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { message } from 'react-message-popup'
 import QP from 'qier-progress'
 import Header from '../components/layouts/Header'
@@ -35,21 +35,25 @@ function App({ Component, pageProps }) {
     })
   }, [])
 
+  const bodyRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     try {
       registerRouterEvents()
       preloadPlay()
     } finally {
-      document.body.classList.remove('loading')
+      setTimeout(() => {
+        bodyRef.current?.classList.add('loaded')
+      }, 1000)
     }
   }, [])
 
   return (
-    <div>
-      <div className='_iucky backdrop-blur-sm w-full h-full'>
+    <div className='loading' ref={bodyRef}>
+      <div className='_iucky backdrop-blur-sm w-screen h-full'>
         <Nav />
           <Header />
-          <main className="py-10 z-50 ">
+          <main className="py-10 z-50">
             <Component {...pageProps} />
           </main>
       </div>
