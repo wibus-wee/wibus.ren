@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 12:59:47
+ * @LastEditTime: 2022-11-25 13:05:45
  * Coding With IU
  */
 import { Tab } from "@headlessui/react"
@@ -54,6 +54,7 @@ export const Photos = () => {
 
   const [translate, setTranslate] = useState(0);
   const [items, setItems] = useState(0);
+  const [y, setY] = useState(200);
 
   const tabRef = useRef<HTMLDivElement>(null);
 
@@ -72,42 +73,43 @@ export const Photos = () => {
 
   return (
     <Tab.Group>
-      <div className={styles.container}>
+      <div className={styles.container}
+        onMouseEnter={() => setY(0)}
+        onMouseLeave={() => setY(200)}
+      >
         <div className={styles.icon}>
           <img className={styles.img} src="/images/photo.webp" alt="icon" />
         </div>
-        <Tab.List className={styles.list} ref={tabRef}>
-          <motion.div className={styles.indicator}
-            style={{
-              // 四舍五入到十位
-              width: `${(100 / items).toExponential(0)}%`,
+        <Tab.List ref={tabRef}>
+          <motion.div
+            className={styles.list}
+            animate={{
+              y: `${y}%`
             }}
-            animate={{ x: `${translate}px` }}
-          ></motion.div>
+          >
+            <motion.div className={styles.indicator}
+              style={{
+                // 四舍五入到十位
+                width: `${(100 / items).toExponential(0)}%`,
+              }}
+              animate={{ x: `${translate}px` }}
+            ></motion.div>
 
-          {config.photos.map((photo, index) => {
-            return (
-              <PhotoTab key={index} onClick={handleIndicator} data-index={index + 1}>
-                <div dangerouslySetInnerHTML={{ __html: photo.icon }}></div>
-              </PhotoTab>
-            )
-          })}
+            {config.photos.map((photo, index) => {
+              return (
+                <PhotoTab key={index} onClick={handleIndicator} data-index={index + 1}>
+                  <div dangerouslySetInnerHTML={{ __html: photo.icon }}></div>
+                </PhotoTab>
+              )
+            })}
+          </motion.div>
 
-          {/* <PhotoTab onClick={handleIndicator} data-index={1}>
-            <Block />
-          </PhotoTab>
-          <PhotoTab onClick={handleIndicator} data-index={2}>
-            <Heart />
-          </PhotoTab>
-          <PhotoTab onClick={handleIndicator} data-index={3}>
-            <Block />
-          </PhotoTab> */}
         </Tab.List>
         <Tab.Panels>
 
           {config.photos.map((photo, index) => {
             return (
-              <Tab.Panel key={index} className={styles.panel}>
+              <Tab.Panel key={index} className={styles.panel} >
                 <PhotoDisplay photos={photo.imgs} />
               </Tab.Panel>
             )
