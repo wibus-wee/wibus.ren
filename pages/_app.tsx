@@ -43,14 +43,16 @@ function App({ Component, pageProps }) {
       document.body.classList.remove('loading')
     }
   }, [])
-  
+
   return (
-    <div className='_iucky'>
-      <Nav />
-      <Header />
-      <main className="px-7 py-10 z-50">
-        <Component {...pageProps} />
-      </main>
+    <div>
+      <div className='_iucky backdrop-blur-sm w-full h-full'>
+        <Nav />
+          <Header />
+          <main className="px-7 py-10 z-50">
+            <Component {...pageProps} />
+          </main>
+      </div>
       <Plum />
     </div>
   )
