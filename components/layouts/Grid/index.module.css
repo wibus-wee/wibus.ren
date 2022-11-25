@@ -79,6 +79,10 @@
     border: 1.5px solid #eaeaea;
   }
 
+  .gridItem:first-child {
+    border-top: none;
+  }
+
   .about {
     width: 100%;
     max-width: 100%;
