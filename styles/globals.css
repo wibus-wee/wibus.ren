@@ -27,6 +27,17 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
 .prose {
   /* color: #555 !important; */
   font-family: Graphik, sans-serif;
@@ -121,6 +132,11 @@ a {
   border-bottom: 1px solid rgba(125, 125, 125, .3);
   transition: border .3s ease-in-out;
   color: #000;
+  background-image: none;
+}
+
+.prose blockquote a:hover {
+  border-bottom: 1px solid rgba(125, 125, 125, .5);
   background-image: none;
 }
 
