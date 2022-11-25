@@ -74,3 +74,13 @@
 .icon-item:hover svg path{
   fill: #000;
 }
+
+@media (prefers-color-scheme: dark) {
+  .icon-item svg path {
+    fill: #fff;
+  }
+
+  .logo {
+    color: #fff;
+  }
+}
