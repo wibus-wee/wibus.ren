@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
 const Home: NextPage = (props: any) => {
 
   return (
-    <>
+    <div className='h-screen'>
       <NextSeo
         title={"Wibus"}
         description={"Just Uaeua"}
@@ -48,7 +48,7 @@ const Home: NextPage = (props: any) => {
           </article>
         </GridItem>
       </Grid>
-    </>
+    </div>
   )
 }
 
