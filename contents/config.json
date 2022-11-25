@@ -5,6 +5,10 @@
   }, {
     "text": "Projects",
     "path": "projects"
+  }, {
+    "text": "Blog",
+    "path": "https://blog.iucky.cn",
+    "external": true
   }],
   "nav-right": [{
     "name": "twitter",
