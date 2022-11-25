@@ -1,4 +1,11 @@
-# Wibus Personal Website
+<h1 align="center"> Wibus Personal Website</h1>
+
+
+<p align="center">
+
+![preview](https://user-images.githubusercontent.com/62133302/203961974-33b06bd9-f2ee-495b-9110-9ece714ada91.png)
+
+</p>
 
 ## Author
 
