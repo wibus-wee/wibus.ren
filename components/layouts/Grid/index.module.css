@@ -35,7 +35,7 @@
   max-height: 328px;
   min-width: 328px;
   padding: 24px;
-  position: static;
+  position: relative;
   z-index: 0;
   overflow: hidden;
 }
