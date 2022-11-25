@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 12:02:11
+ * @LastEditTime: 2022-11-25 12:59:47
  * Coding With IU
  */
 import { Tab } from "@headlessui/react"
@@ -13,6 +13,7 @@ import { Play, play } from "../../../utils/play.util"
 import { motion } from "framer-motion"
 import styles from "./index.module.css"
 import { useEffect, useRef, useState } from "react"
+import config from "@contents/config.json"
 
 const PhotoTab = ({ onClick = (e: React.MouseEvent<HTMLButtonElement>) => { }, children, ...props }) => {
   return (
@@ -25,25 +26,21 @@ const PhotoTab = ({ onClick = (e: React.MouseEvent<HTMLButtonElement>) => { }, c
   )
 }
 
-const PhotoDisplay = ({ photos, position = "center", ...props }: {
-  photos: string[],
+const PhotoDisplay = ({ photos, ...props }: {
+  photos: {
+    path: string;
+    position: string;
+  }[],
   position?: string | string[],
   [key: string]: any
 }) => {
   const [current, setCurrent] = useState(0)
-  const [imagePosition, setImagePosition] = useState("center")
-  const [imageSrc, setImageSrc] = useState(photos[0])
-
-  useEffect(() => {
-    setImagePosition(typeof position === "string" ? position : position[current])
-    setImageSrc(photos[current])
-  }, [current])
 
   return (
     <div className={styles.photo}
       style={{
-        backgroundImage: `url(/photos/${imageSrc})`,
-        backgroundPosition: imagePosition,
+        backgroundImage: `url(/photos/${photos[current].path})`,
+        backgroundPosition: photos[current].position,
       }}
       onClick={() => {
         setCurrent((current + 1) % photos.length)
@@ -61,7 +58,7 @@ export const Photos = () => {
   const tabRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setItems(document.querySelectorAll("[id^='headlessui-tabs-tab-']").length)
+    setItems(config.photos.length)
   }, [])
 
   const handleIndicator = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -81,9 +78,22 @@ export const Photos = () => {
         </div>
         <Tab.List className={styles.list} ref={tabRef}>
           <motion.div className={styles.indicator}
+            style={{
+              // 四舍五入到十位
+              width: `${(100 / items).toExponential(0)}%`,
+            }}
             animate={{ x: `${translate}px` }}
           ></motion.div>
-          <PhotoTab onClick={handleIndicator} data-index={1}>
+
+          {config.photos.map((photo, index) => {
+            return (
+              <PhotoTab key={index} onClick={handleIndicator} data-index={index + 1}>
+                <div dangerouslySetInnerHTML={{ __html: photo.icon }}></div>
+              </PhotoTab>
+            )
+          })}
+
+          {/* <PhotoTab onClick={handleIndicator} data-index={1}>
             <Block />
           </PhotoTab>
           <PhotoTab onClick={handleIndicator} data-index={2}>
@@ -91,18 +101,18 @@ export const Photos = () => {
           </PhotoTab>
           <PhotoTab onClick={handleIndicator} data-index={3}>
             <Block />
-          </PhotoTab>
+          </PhotoTab> */}
         </Tab.List>
         <Tab.Panels>
-          <Tab.Panel className={styles.panel}>
-            <PhotoDisplay photos={["1.png", "2.png", "3.jpg"]} />
-          </Tab.Panel>
-          <Tab.Panel className={styles.panel}>
-          <PhotoDisplay photos={["2.png"]} position="0% 0%" />
-          </Tab.Panel>
-          <Tab.Panel className={styles.panel}>
-            <PhotoDisplay photos={["3.jpg"]} />
-          </Tab.Panel>
+
+          {config.photos.map((photo, index) => {
+            return (
+              <Tab.Panel key={index} className={styles.panel}>
+                <PhotoDisplay photos={photo.imgs} />
+              </Tab.Panel>
+            )
+          })
+          }
         </Tab.Panels>
       </div>
     </Tab.Group>
