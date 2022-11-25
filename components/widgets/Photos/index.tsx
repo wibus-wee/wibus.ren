@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 13:05:45
+ * @LastEditTime: 2022-11-25 13:46:22
  * Coding With IU
  */
 import { Tab } from "@headlessui/react"
@@ -85,7 +85,7 @@ export const Photos = () => {
             className={styles.list}
             animate={{
               y: `${y}%`
-            }}
+            }}           
           >
             <motion.div className={styles.indicator}
               style={{
