@@ -49,7 +49,7 @@ function App({ Component, pageProps }) {
       <div className='_iucky backdrop-blur-sm w-full h-full'>
         <Nav />
           <Header />
-          <main className="px-7 py-10 z-50">
+          <main className="py-10 z-50 ">
             <Component {...pageProps} />
           </main>
       </div>

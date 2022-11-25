@@ -60,6 +60,7 @@
 @media (max-width: 768px) {
   .grid {
     display: block;
+    padding: 0;
   }
 
   .gridItem {
