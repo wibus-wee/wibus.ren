@@ -15,7 +15,7 @@ body {
 }
 
 .font-sans {
-  font-family: "Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 a {
@@ -27,61 +27,225 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
 .prose {
-  color: #555 !important;
+  /* color: #555 !important; */
+  font-family: Graphik, sans-serif;
+  color: #707070;
+  font-size: 18px;
+  line-height: 180%;
+  font-weight: 400;
 }
 
 .prose a {
   text-decoration: none;
-  font-weight: 500;
 }
 
 .prose a {
   font-weight: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(125,125,125,.3);
-  transition: border .3s ease-in-out;
+  /* border-bottom: 1px solid rgba(125, 125, 125, .3); */
+  background-image: linear-gradient(transparent 0%, transparent 50%, rgba(125, 125, 125, .3) 50%, rgba(125, 125, 125, .3) 100%);
+  transition: background-image .2s ease;
+}
+
+.prose a:hover {
+  background-image: linear-gradient(transparent 0%, transparent 50%, rgba(125, 125, 125, .5) 50%, rgba(125, 125, 125, .5) 100%);
 }
 
 .prose hr {
-  width: 50px;
+  width: 100px;
   margin: 2em auto;
 }
 
+.prose .hr {
+  width: 100%;
+  height: 1.4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: rgba(0, 0, 0, .06);
+}
+
 .prose h1 {
-  color: #000;
-  font-weight: 800;
-  font-size: 2.25em;
+  font-family: Graphik, sans-serif;
+  font-size: 31px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -.4px;
   margin-top: 0;
-  margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
+  margin-bottom: 0;
+}
+
+.prose desc {
+  color: #949494;
+}
+
+.prose span {
+  color: #000
+}
+
+.prose h2 {
+  margin-bottom: 16px;
+  font-family: Graphik, sans-serif;
+  color: #747474;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.prose blockquote * {
+  color: #949494;
+  font-size: 16px;
+  line-height: 180%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prose blockquote {
+  border: none;
+  padding: 0;
+}
+
+.prose blockquote p::before,
+.prose blockquote p::after {
+  content: none;
+}
+
+.prose blockquote a::after {
+  content: none;
+}
+
+.prose blockquote a {
+  font-weight: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 125, 125, .3);
+  transition: border .3s ease-in-out;
+  color: #000;
+  background-image: none;
+}
+
+.prose blockquote a:hover {
+  border-bottom: 1px solid rgba(125, 125, 125, .5);
+  background-image: none;
 }
 
 a.item {
   transition: .2s all ease-out;
   text-decoration: none;
-  border-bottom: none!important;
+  border-bottom: none !important;
   opacity: .6;
+}
+
+.others {
+  font-size: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
   .prose {
     --tw-prose-headings: rgb(219, 218, 218)
   }
+
   html {
     color-scheme: dark;
   }
+
   body {
     color: #d4d4d4;
     background: black;
   }
+
   .prose {
     color: rgb(156, 156, 156) !important;
   }
+
   .prose h1 {
     color: rgb(219, 218, 218);
   }
-  .prose :where(a):not(:where([class~="not-prose"] *)){
+
+  .prose :where(a):not(:where([class~="not-prose"] *)) {
     color: rgb(219, 218, 218);
   }
+
+  .prose span {
+    color: rgb(219, 218, 218);
+  }
+}
+
+html * {
+  background-attachment: scroll !important;
+}
+
+._iucky {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading::before {
+  opacity: 0;
+}
+
+.loading::after {
+  opacity: 0;
+}
+
+.loading {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.loading.loaded {
+  opacity: 1;
 }

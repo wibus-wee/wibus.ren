@@ -1,10 +1,12 @@
 import '../styles/globals.css'
 import { Router } from 'next/router'
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { message } from 'react-message-popup'
 import QP from 'qier-progress'
 import Header from '../components/layouts/Header'
 import Plum from '../components/widgets/Plum'
+import { Nav } from '../components/layouts/Nav'
+import { preloadPlay } from '../utils/play.util'
 
 function App({ Component, pageProps }) {
 
@@ -33,22 +35,33 @@ function App({ Component, pageProps }) {
     })
   }, [])
 
+  const bodyRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     try {
       registerRouterEvents()
+      preloadPlay()
     } finally {
-      document.body.classList.remove('loading')
+      setTimeout(() => {
+        bodyRef.current?.classList.add('loaded')
+      }, 300)
+      setTimeout(() => {
+        bodyRef.current?.classList.remove('loading')
+      }, 600)
     }
   }, [])
 
   return (
-    <>
-      <Header />
-      <main className="px-7 py-10">
-        <Component {...pageProps} />
-      </main>
+    <div className='loading' ref={bodyRef}>
+      <div className='_iucky backdrop-blur-sm w-screen h-full'>
+        <Nav />
+          <Header />
+          <main className="py-10 z-50">
+            <Component {...pageProps} />
+          </main>
+      </div>
       <Plum />
-    </>
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "experimentalDecorators": true,
     "noEmit": true,
     "strict": true,
@@ -34,6 +35,9 @@
       ],
       "~": [
         ".."
+      ],
+      "@contents/*": [
+        "contents/*"
       ]
     }
   },
