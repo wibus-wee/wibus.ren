@@ -44,7 +44,10 @@ function App({ Component, pageProps }) {
     } finally {
       setTimeout(() => {
         bodyRef.current?.classList.add('loaded')
-      }, 1000)
+      }, 300)
+      setTimeout(() => {
+        bodyRef.current?.classList.remove('loading')
+      }, 600)
     }
   }, [])
 
