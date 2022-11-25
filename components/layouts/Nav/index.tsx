@@ -3,14 +3,14 @@
  * @author: Wibus
  * @Date: 2022-11-23 13:39:59
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 17:17:44
+ * @LastEditTime: 2022-11-25 17:20:14
  * Coding With IU
  */
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import config from '../../../contents/config.json'
 import { Play, play } from '../../../utils/play.util'

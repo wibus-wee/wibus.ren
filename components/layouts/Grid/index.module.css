@@ -61,6 +61,7 @@
   .grid {
     display: block;
     padding: 0;
+    padding-bottom: 32px;
   }
 
   .gridItem {
@@ -75,6 +76,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
+    border: 1.5px solid #eaeaea;
   }
 
   .about {

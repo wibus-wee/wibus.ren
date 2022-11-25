@@ -3,41 +3,48 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 16:05:32
+ * @LastEditTime: 2022-11-25 17:49:43
  * Coding With IU
  */
-import { Tab } from "@headlessui/react"
-import { Block } from "../../../public/iconsTS/block"
-import { Heart } from "../../../public/iconsTS/heart"
-import { Play, play } from "../../../utils/play.util"
-import { motion } from "framer-motion"
-import styles from "./index.module.css"
-import { useEffect, useRef, useState } from "react"
-import config from "@contents/config.json"
+import { motion } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
 
-const PhotoTab = ({ onClick = (e: React.MouseEvent<HTMLButtonElement>) => { }, children, ...props }) => {
+import config from '@contents/config.json'
+import { Tab } from '@headlessui/react'
+
+import { Block } from '../../../public/iconsTS/block'
+import { Heart } from '../../../public/iconsTS/heart'
+import { Play, play } from '../../../utils/play.util'
+import styles from './index.module.css'
+
+const PhotoTab = ({
+  onClick = (e: React.MouseEvent<HTMLButtonElement>) => {},
+  children,
+  ...props
+}) => {
   return (
-    <Tab className={styles.tab}
-      onClick={onClick}
-      {...props}
-    >
+    <Tab className={styles.tab} onClick={onClick} {...props}>
       {children}
     </Tab>
   )
 }
 
-const PhotoDisplay = ({ photos, ...props }: {
+const PhotoDisplay = ({
+  photos,
+  ...props
+}: {
   photos: {
-    path: string;
-    position: string;
-  }[],
-  position?: string | string[],
+    path: string
+    position: string
+  }[]
+  position?: string | string[]
   [key: string]: any
 }) => {
   const [current, setCurrent] = useState(0)
 
   return (
-    <div className={styles.photo}
+    <div
+      className={styles.photo}
       style={{
         backgroundImage: `url(${photos[current].path})`,
         backgroundPosition: photos[current].position,
@@ -51,29 +58,31 @@ const PhotoDisplay = ({ photos, ...props }: {
 }
 
 export const Photos = () => {
+  const [translate, setTranslate] = useState(0)
+  const [items, setItems] = useState(0)
+  const [y, setY] = useState(200)
 
-  const [translate, setTranslate] = useState(0);
-  const [items, setItems] = useState(0);
-  const [y, setY] = useState(200);
-
-  const tabRef = useRef<HTMLDivElement>(null);
+  const tabRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setItems(config.photos.length)
   }, [])
 
   const handleIndicator = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const width = tabRef.current?.clientWidth || 100;
+    const width = tabRef.current?.clientWidth || 100
     const persent = (width / items).toFixed(2)
     if (!e.currentTarget.dataset.index) return
-    setTranslate(Number(Number(e.currentTarget.dataset.index) - 1) * Number(persent))
+    setTranslate(
+      Number(Number(e.currentTarget.dataset.index) - 1) * Number(persent),
+    )
     console.log(e.currentTarget.dataset.index)
     play(Play.photosMenuClick)
   }
 
   return (
     <Tab.Group>
-      <div className={styles.container}
+      <div
+        className={styles.container}
         onMouseEnter={() => setY(0)}
         onMouseLeave={() => setY(200)}
       >
@@ -84,10 +93,11 @@ export const Photos = () => {
           <motion.div
             className={styles.list}
             animate={{
-              y: `${y}%`
-            }}           
+              y: `${y}%`,
+            }}
           >
-            <motion.div className={styles.indicator}
+            <motion.div
+              className={styles.indicator}
               style={{
                 // 四舍五入到十位
                 width: `${(100 / items).toExponential(0)}%`,
@@ -97,24 +107,25 @@ export const Photos = () => {
 
             {config.photos.map((photo, index) => {
               return (
-                <PhotoTab key={index} onClick={handleIndicator} data-index={index + 1}>
+                <PhotoTab
+                  key={index}
+                  onClick={handleIndicator}
+                  data-index={index + 1}
+                >
                   <div dangerouslySetInnerHTML={{ __html: photo.icon }}></div>
                 </PhotoTab>
               )
             })}
           </motion.div>
-
         </Tab.List>
         <Tab.Panels>
-
           {config.photos.map((photo, index) => {
             return (
-              <Tab.Panel key={index} className={styles.panel} >
+              <Tab.Panel key={index} className={styles.panel}>
                 <PhotoDisplay photos={photo.imgs} />
               </Tab.Panel>
             )
-          })
-          }
+          })}
         </Tab.Panels>
       </div>
     </Tab.Group>
