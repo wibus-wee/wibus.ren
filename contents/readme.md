@@ -11,3 +11,5 @@
 我主要在 [Mog](https://github.com/mogland), STY, [Mix](https://github.com/wibus-wee/Mix) 等项目中担任组织者. 现为 [Mix Space](https://github.com/mx-space), [中文博客列表导航](https://github.com/zh-blogs), [UTM](https://github.com/utmapp/UTM), [DevToysMac](https://github.com/ObuchiYuki/DevToysMac) 等项目中的参与者. 你可以在[这里](/projects)看到我其他项目
 
 ![](https://ghchart.rshah.org/wibus-wee)
+
+> Style inspired by [Macro Cornacchia](https://www.marco.fyi)
