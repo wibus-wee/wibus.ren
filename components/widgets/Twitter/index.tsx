@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-24 18:36:41
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 09:32:08
+ * @LastEditTime: 2022-11-25 16:23:35
  * Coding With IU
  */
 import clsx from "clsx"
@@ -11,6 +11,8 @@ import { useState } from "react";
 import { Play, play } from "../../../utils/play.util"
 import styles from "./index.module.css"
 import { motion } from "framer-motion"
+import config from '@contents/config.json'
+import Markdown from "../Markdown";
 
 export const Twitter = () => {
 
@@ -24,24 +26,24 @@ export const Twitter = () => {
     <div className={clsx(styles.container)}>
       <div>
         <div className={clsx(styles.innerContainer)}>
-          <a className={clsx(styles.info)} href={"https://twitter.com/wibus_wee"} >
+          <a className={clsx(styles.info)} href={config.status.userlink} >
             <div className={clsx(styles.avatar)}>
-              <img src="/favicon.png" alt="wibus" />
+              <img src={config.status.avatar} alt={config.status.username} />
             </div>
             <motion.div className={clsx(styles.nameContainer)}
               animate={{ color }}
               transition={{ duration: 0.3 }}
             >
-              <div className={clsx(styles.name)}>Wibus</div>
+              <div className={clsx(styles.name)}>{config.status.nickname}</div>
               <motion.div className={clsx(styles.username)}
                 animate={{ color: grayColor }}
                 transition={{ duration: 0.3 }}
-              >@wibus_wee</motion.div>
+              >@{config.status.username}</motion.div>
             </motion.div>
           </a>
           <div className={clsx(styles.icon)}>
-            <a href="https://twitter.com/wibus_wee" className={clsx(styles.link)}>
-              <img src="/images/twitter.png" alt="twitter" />
+            <a href={config.status.link} className={clsx(styles.link)}>
+              <img src={config.status.icon} alt="icon" />
             </a>
             <motion.div className={clsx(styles.iconBg)}
               animate={{
@@ -52,7 +54,7 @@ export const Twitter = () => {
                 ease: "easeInOut",
               }}
               style={{
-
+                backgroundColor: config.status.bgColor,
               }}
             />
           </div>
@@ -60,10 +62,8 @@ export const Twitter = () => {
         <motion.div className={clsx(styles.content)}
           animate={{ color }}
           transition={{ duration: 0.3 }}
-        >
-          <p>Mog v2 的基础评论服务正在重构中！🌟</p>
-          <p>希望能尽快发布。^ - ^</p>
-        </motion.div>
+          dangerouslySetInnerHTML={{ __html: config.status.content }}
+        />
       </div>
 
       <TwitterReadBtn
@@ -78,8 +78,8 @@ export const Twitter = () => {
           setGrayColor("#949495");
         }}
         color={color}
-        href={"https://twitter.com/wibus_wee"}
-        text={"Read on Twitter"}
+        href={config.status.link}
+        text={config.status.text}
       />
     </div>
   )
