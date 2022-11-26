@@ -9,6 +9,6 @@
 
 export const createUmamiEvent = (event: string) => {
   if (typeof window !== 'undefined') {
-    window.umami.trackEvent(event)
+    window.umami?.trackEvent(event)
   }
 }
