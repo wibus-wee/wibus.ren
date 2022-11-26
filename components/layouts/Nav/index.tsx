@@ -3,14 +3,16 @@
  * @author: Wibus
  * @Date: 2022-11-23 13:39:59
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 17:56:45
+ * @LastEditTime: 2022-11-26 16:14:50
  * Coding With IU
  */
 import clsx from 'clsx'
+import { Events } from 'constants/events'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useMemo, useState } from 'react'
+import { createUmamiEvent } from 'utils/umami.util'
 
 import config from '../../../contents/config.json'
 import { Play, play } from '../../../utils/play.util'
@@ -30,6 +32,7 @@ export const Nav = () => {
   const handleIndicator = (e: React.MouseEvent<HTMLAnchorElement>) => {
     setTranslatePresent(Number(e.currentTarget.dataset.index) * 100)
     play(Play.navClick)
+    createUmamiEvent(Events.clickNavItem)
   }
 
   return (

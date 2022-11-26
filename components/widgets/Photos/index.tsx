@@ -3,11 +3,13 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 17:49:43
+ * @LastEditTime: 2022-11-26 16:17:29
  * Coding With IU
  */
+import { Events } from 'constants/events'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+import { createUmamiEvent } from 'utils/umami.util'
 
 import config from '@contents/config.json'
 import { Tab } from '@headlessui/react'
@@ -52,6 +54,7 @@ const PhotoDisplay = ({
       onClick={() => {
         setCurrent((current + 1) % photos.length)
         play(Play.photosClick)
+        createUmamiEvent(Events.clickPhotos)
       }}
     ></div>
   )
@@ -77,6 +80,7 @@ export const Photos = () => {
     )
     console.log(e.currentTarget.dataset.index)
     play(Play.photosMenuClick)
+    createUmamiEvent(Events.clickPhotosMenu)
   }
 
   return (

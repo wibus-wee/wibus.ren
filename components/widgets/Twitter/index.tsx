@@ -3,12 +3,14 @@
  * @author: Wibus
  * @Date: 2022-11-24 18:36:41
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-25 16:28:50
+ * @LastEditTime: 2022-11-26 16:18:34
  * Coding With IU
  */
 import clsx from 'clsx'
+import { Events } from 'constants/events'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { createUmamiEvent } from 'utils/umami.util'
 
 import config from '@contents/config.json'
 
@@ -105,6 +107,7 @@ export const TwitterReadBtn = ({
       rel="noreferrer"
       onMouseEnter={() => {
         play(Play.twitterSound)
+        createUmamiEvent(Events.enterStatusWidget)
         onMouseEnter()
       }}
       onMouseLeave={() => {
