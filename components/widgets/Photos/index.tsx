@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-11-25 09:47:36
  * @LastEditors: Wibus
- * @LastEditTime: 2022-11-26 16:17:29
+ * @LastEditTime: 2022-11-26 16:27:18
  * Coding With IU
  */
 import { Events } from 'constants/events'
@@ -14,8 +14,6 @@ import { createUmamiEvent } from 'utils/umami.util'
 import config from '@contents/config.json'
 import { Tab } from '@headlessui/react'
 
-import { Block } from '../../../public/iconsTS/block'
-import { Heart } from '../../../public/iconsTS/heart'
 import { Play, play } from '../../../utils/play.util'
 import styles from './index.module.css'
 
@@ -78,7 +76,7 @@ export const Photos = () => {
     setTranslate(
       Number(Number(e.currentTarget.dataset.index) - 1) * Number(persent),
     )
-    console.log(e.currentTarget.dataset.index)
+    // console.log(e.currentTarget.dataset.index)
     play(Play.photosMenuClick)
     createUmamiEvent(Events.clickPhotosMenu)
   }

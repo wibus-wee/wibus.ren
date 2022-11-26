@@ -1,12 +1,11 @@
 /*
- * @FilePath: /mog-theme-tiny/utils/load.util.ts
+ * @FilePath: /iucky.cn/utils/load.util.ts
  * @author: Innei
  * @Date: 2022-08-08 17:03:46
- * @LastEditors: Innei
- * @LastEditTime: 2022-08-08 17:03:47
+ * @LastEditors: Wibus
+ * @LastEditTime: 2022-11-26 16:27:27
  * Coding With IU
  */
-
 
 const isLoadScriptMap: Record<string, 'loading' | 'loaded'> = {}
 const loadingQueueMap: Record<string, [Function, Function][]> = {}
@@ -39,7 +38,7 @@ export function loadScript(url: string) {
     }
 
     // if (isDev) {
-      console.log('load script: ', url)
+    // console.log('load script: ', url)
     // }
 
     script.onerror = function (e) {
