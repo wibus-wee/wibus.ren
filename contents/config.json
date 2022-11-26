@@ -56,10 +56,10 @@
       "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M12 4C9.23858 4 7 6.23858 7 9C7 11.7614 9.23858 14 12 14C14.7614 14 17 11.7614 17 9C17 6.23858 14.7614 4 12 4Z' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' /><path d='M12 14C12.5304 14 13.0391 14.2107 13.4142 14.5858C13.7893 14.9609 14 15.4696 14 16C14 16.5304 13.7893 17.0391 13.4142 17.4142C13.0391 17.7893 12.5304 18 12 18C11.4696 18 10.9609 17.7893 10.5858 17.4142C10.2107 17.0391 10 16.5304 10 16C10 15.4696 10.2107 14.9609 10.5858 14.5858C10.9609 14.2107 11.4696 14 12 14Z' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' /></svg>",
       "imgs": [{
         "path": "https://cdn.my-api.cn/user/w/asset-pic-picgo/2022-11-202211251606889.jpeg",
-        "position": "0% 0%"
+        "position": "100% 100%"
       }, {
         "path": "https://cdn.my-api.cn/user/w/asset-pic-picgo/2022-11-202211251606888.jpeg",
-        "position": "0% 0%"
+        "position": "100% 70%"
       }]
     },
     {
