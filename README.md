@@ -1,4 +1,4 @@
-<h1 align="center"> Wibus Personal Website</h1>
+<h1 align="center">Wibus Personal Website</h1>
 
 
 <p align="center">
@@ -9,16 +9,15 @@
 
 ## Features 📋
 
-- [x] Markdown Support 📝 (Allow raw HTML, but GitHub Flavored Markdown hasn't been supported yet)
-- [x] Native Dark Mode 🌙
-- [x] Responsive Design 📱
-- [x] Portfolio 📂 (New design is coming Soon)
-- [x] SEO Optimized 📈
-- [x] Umami Analytics 📊
-- [x] Dynamic Config Settings 📄
-- [x] Customizable 🎨
-- [x] Good interactivity 🎮 (Sound effects, animations, etc.)
-- [ ] Blog Section with [Mog](https://mog.js.org) 📝 (Coming Soon)
+- 📝 Markdown Support  (Allow raw HTML, but GitHub Flavored Markdown hasn't been supported yet) Markdown 支持 (支持原生 HTML，但是还不支持 GitHub Flavored Markdown)
+- 🌙 Native Dark Mode 原生暗黑模式
+- 📂 Portfolio  (New design is coming Soon) 作品集 (新设计即将推出)
+- 📈 SEO Optimized 优化 SEO
+- 📊 Umami Analytics Umami 分析 (报表功能即将推出)
+- 📄 Dynamic Config Settings 动态配置设置
+- 🎨 Customizable 自定义
+- 🎮 Good interactivity  (Sound effects, animations, etc.) 良好的交互性 (音效、动画等)
+- 📝 ~~Blog with [Mog](https://mog.js.org) Service~~  (Coming Soon) 以 [Mog](https://mog.js.org) 为基础服务的博客 (即将推出)
 ## Built with 🛠️
 
 - [React](https://reactjs.org/)
