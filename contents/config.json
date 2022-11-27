@@ -35,12 +35,12 @@
     "nickname": "Wibus",
     "username": "wibus_wee",
     "avatar": "/favicon.png",
-    "content": "Mog v2 的基础评论服务正在重构中！🌟 <br /> 希望能尽快发布。^ - ^",
-    "userlink": "#",
-    "link": "https://mog.js.org",
-    "text": "Go to Mog",
-    "icon": "/images/wechat.png",
-    "bgColor": "#0cd369"
+    "content": "暂时写完了主页了... <br /> 不知道这个跟之前的那个哪个更好呢 ^ - ^",
+    "userlink": "https://twitter.com/wibus_wee",
+    "link": "https://twitter.com/wibus_wee/status/1596089970762317824",
+    "text": "Read on Twitter",
+    "icon": "/images/twitter.png",
+    "bgColor": "rgb(29, 155, 240)"
   },
   "photos": [
     {
