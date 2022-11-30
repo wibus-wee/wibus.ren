@@ -5,7 +5,7 @@ specifiers:
   '@innei-util/eslint-config-react-ts': 0.8.2
   '@innei/prettier': 0.9.5
   '@tailwindcss/typography': 0.5.8
-  '@types/lodash': 4.14.190
+  '@types/lodash': 4.14.191
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -67,7 +67,7 @@ devDependencies:
   '@innei-util/eslint-config-react-ts': 0.8.2_hsf322ms6xhhd4b5ne6lb74y4a
   '@innei/prettier': 0.9.5
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
-  '@types/lodash': 4.14.190
+  '@types/lodash': 4.14.191
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -1750,8 +1750,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/lodash/4.14.190:
-    resolution: {integrity: sha512-5iJ3FBJBvQHQ8sFhEhJfjUP+G+LalhavTkYyrAYqz5MEJG+erSv0k9KJLb6q7++17Lafk1scaTIFXcMJlwK8Mw==}
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: true
 
   /@types/mdast/3.0.10:
