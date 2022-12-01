@@ -35,7 +35,7 @@ specifiers:
   qier-progress: 1.0.4
   react: 18.2.0
   react-dom: 18.2.0
-  react-markdown: 8.0.3
+  react-markdown: 8.0.4
   react-message-popup: 1.0.0
   react-use: 17.4.0
   rehype-raw: 6.1.1
@@ -57,7 +57,7 @@ dependencies:
   qier-progress: 1.0.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.3_fan5qbzahqtxlm5dzefqlqx5ia
+  react-markdown: 8.0.4_fan5qbzahqtxlm5dzefqlqx5ia
   react-message-popup: 1.0.0_biqbaboplfbrettd7655fr4n2y
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
   rehype-raw: 6.1.1
@@ -5441,8 +5441,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-markdown/8.0.3_fan5qbzahqtxlm5dzefqlqx5ia:
-    resolution: {integrity: sha512-We36SfqaKoVNpN1QqsZwWSv/OZt5J15LNgTLWynwAN5b265hrQrsjMtlRNwUvS+YyR3yDM8HpTNc4pK9H/Gc0A==}
+  /react-markdown/8.0.4_fan5qbzahqtxlm5dzefqlqx5ia:
+    resolution: {integrity: sha512-2oxHa6oDxc1apg/Gnc1Goh06t3B617xeywqI/92wmDV9FELI6ayRkwge7w7DoEqM0gRpZGTNU6xQG+YpJISnVg==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
