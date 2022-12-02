@@ -1,7 +1,10 @@
 {
   "umami": {
     "id": "ec4a742f-f950-4d87-94ea-d57920decb44",
-    "src": "https://umami.iucky.cn/umami.js"
+    "src": "https://umami.iucky.cn/umami.js",
+    "config": {
+      "eventListener": false
+    }
   },
   "nav": [{
     "text": "Home",
