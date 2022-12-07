@@ -1,52 +1,197 @@
 {
   "Side Project": [
-    { "icon": "./icon/mct.png", "name": "Mini Class Tool", "repo": "wibus-wee/mini-class-tool", "description": "Quick get course information and generate course table | 快速获取网课信息并生成课程表"},
-    { "symbol": "👂", "name": "GitHub Event Discord Listener", "repo": "wibus-wee/github-event-discord-listener", "description": "GitHub activity to discord Listener | 监听 GitHub 个人活动并发送至 Discord"}
+    {
+      "icon": "./icon/chatgpt-for-bing.png",
+      "name": "ChatGPT for Bing",
+      "repo": "wibus-wee/chatgpt-bing-extension",
+      "description": "Display ChatGPT response alongside Bing Search results | 在必应搜索结果旁边显示 ChatGPT 对话 "
+    },
+    {
+      "icon": "./icon/mct.png",
+      "name": "Mini Class Tool",
+      "repo": "wibus-wee/mini-class-tool",
+      "description": "Quick get course information and generate course table | 快速获取网课信息并生成课程表"
+    },
+    {
+      "symbol": "👂",
+      "name": "GitHub Event Discord Listener",
+      "repo": "wibus-wee/github-event-discord-listener",
+      "description": "GitHub activity to discord Listener | 监听 GitHub 个人活动并发送至 Discord"
+    }
   ],
   "Nashi Ecosystem": [
-    { "symbol": "L", "name": "nashi.lazy", "repo": "wibus-wee/nashi.lazy", "description": "A library for lazy loading images"},
-    { "symbol": "🍐", "name": "Nashi Experience", "repo": "wibus-wee/nashi-experience", "description": "Online nashi package experience | Nashi 库在线体验"}
+    {
+      "symbol": "L",
+      "name": "nashi.lazy",
+      "repo": "wibus-wee/nashi.lazy",
+      "description": "A library for lazy loading images"
+    },
+    {
+      "symbol": "🍐",
+      "name": "Nashi Experience",
+      "repo": "wibus-wee/nashi-experience",
+      "description": "Online nashi package experience | Nashi 库在线体验"
+    }
   ],
   "Mog Basic Requirements": [
-    { "icon": "./icon/mog.png", "name": "Core", "repo": "mogland/core", "description": "一款弹性的模块化 CMS 博客系统"}
+    {
+      "icon": "./icon/mog.png",
+      "name": "Core",
+      "repo": "mogland/core",
+      "description": "一款弹性的模块化 CMS 博客系统"
+    }
   ],
   "Mog Ecosystem": [
-    { "symbol": "🎈", "name": "Single Theme", "repo": "mogland/mog-theme-Single", "description": "Night patterns, simple, atmospheric theme"},
-    { "symbol": "✏️", "name": "Tiny Theme", "repo": "mogland/mog-theme-tiny", "description": "A simple, clean, and minimalistic theme"},
-    { "symbol": "💬", "name": "mog-comments-wc", "repo": "mogland/mog-comments-wc", "description": "Comments Component for front-end themes"},
-    { "icon": "./icon/react.svg", "name": "mog-comments-react", "repo": "mogland/mog-comments-react", "description": "React.JS Comments Component for front-end themes"}
+    {
+      "symbol": "🎈",
+      "name": "Single Theme",
+      "repo": "mogland/mog-theme-Single",
+      "description": "Night patterns, simple, atmospheric theme"
+    },
+    {
+      "symbol": "✏️",
+      "name": "Tiny Theme",
+      "repo": "mogland/mog-theme-tiny",
+      "description": "A simple, clean, and minimalistic theme"
+    },
+    {
+      "symbol": "💬",
+      "name": "mog-comments-wc",
+      "repo": "mogland/mog-comments-wc",
+      "description": "Comments Component for front-end themes"
+    },
+    {
+      "icon": "./icon/react.svg",
+      "name": "mog-comments-react",
+      "repo": "mogland/mog-comments-react",
+      "description": "React.JS Comments Component for front-end themes"
+    }
   ],
   "Koishi Ecosystem": [
-    { "symbol": "📈", "name": "Deep-Danbooru", "repo": "wibus-wee/koishi-plugin-deep-danbooru", "description": "Analyzing images via deepdanbooru | 基于 DeepDanbooru 的图像分析插件"},
-    { "symbol": "🤖️", "name": "NovelAI-API", "repo": "wibus-wee/koishi-plugin-novel-ai-api", "description": "Special version of NovelAI Generator | NovelAI 画图接口特殊版本"}
+    {
+      "symbol": "📈",
+      "name": "Deep-Danbooru",
+      "repo": "wibus-wee/koishi-plugin-deep-danbooru",
+      "description": "Analyzing images via deepdanbooru | 基于 DeepDanbooru 的图像分析插件"
+    },
+    {
+      "symbol": "🤖️",
+      "name": "NovelAI-API",
+      "repo": "wibus-wee/koishi-plugin-novel-ai-api",
+      "description": "Special version of NovelAI Generator | NovelAI 画图接口特殊版本"
+    }
   ],
   "Mix Space Ecosystem": [
-    { "symbol": "📄", "name": "Mix Space Documentation", "repo": "mx-space/docs", "description": "Documentation for Mix Space"}
+    {
+      "symbol": "📄",
+      "name": "Mix Space Documentation",
+      "repo": "mx-space/docs",
+      "description": "Documentation for Mix Space"
+    }
   ],
   "Web Components": [
-    { "symbol": "🏮", "name": "Lantern", "repo": "wibus-wee/wc-lantern", "description": "Lantern for Web Components"}
+    {
+      "symbol": "🏮",
+      "name": "Lantern",
+      "repo": "wibus-wee/wc-lantern",
+      "description": "Lantern for Web Components"
+    }
   ],
   "Typecho Ecosystem": [
-    { "symbol": "S", "name": "STY", "repo": "", "description": "一款集成多个样式部件于一体的Typecho主题！"},
-    { "symbol": "M", "name": "Mix", "repo": "wibus-wee/Mix", "description": "A blog and diary in one theme"},
-    { "symbol": "🌈", "name": "Wiather", "repo": "wibus-wee/Typecho-Plugin-Wiather", "description": "A Weather Plugin for Handsome"},
-    { "symbol": "🪆", "name": "Live2D", "repo": "wibus-wee/Typecho-Plugin-Live2D", "description": "A Live2D Plugin basic on 爆胎"},
-    { "symbol": "🔔", "name": "HandsomeCall", "repo": "wibus-wee/Typecho-Plugin-HandsomeCall", "description": "A message notice plugin for Handsome"},
-    { "symbol": "🚫", "name": "Disable-Typecho-Frontend", "repo": "wibus-wee/Disable-Typecho-Frontend", "description": "A completely disabled front-end case, can be a full site maintenance plug-in"}
+    {
+      "symbol": "S",
+      "name": "STY",
+      "repo": "",
+      "description": "一款集成多个样式部件于一体的Typecho主题！"
+    },
+    {
+      "symbol": "M",
+      "name": "Mix",
+      "repo": "wibus-wee/Mix",
+      "description": "A blog and diary in one theme"
+    },
+    {
+      "symbol": "🌈",
+      "name": "Wiather",
+      "repo": "wibus-wee/Typecho-Plugin-Wiather",
+      "description": "A Weather Plugin for Handsome"
+    },
+    {
+      "symbol": "🪆",
+      "name": "Live2D",
+      "repo": "wibus-wee/Typecho-Plugin-Live2D",
+      "description": "A Live2D Plugin basic on 爆胎"
+    },
+    {
+      "symbol": "🔔",
+      "name": "HandsomeCall",
+      "repo": "wibus-wee/Typecho-Plugin-HandsomeCall",
+      "description": "A message notice plugin for Handsome"
+    },
+    {
+      "symbol": "🚫",
+      "name": "Disable-Typecho-Frontend",
+      "repo": "wibus-wee/Disable-Typecho-Frontend",
+      "description": "A completely disabled front-end case, can be a full site maintenance plug-in"
+    }
   ],
   "Starter Templates": [
-    { "icon": "./icon/ts.svg", "name": "Typescript Starter", "repo": "wibus-wee/starter-ts", "description": "Starter template for TypeScript library"},
-    { "icon": "https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png", "name": "Next.js TS Starter", "repo": "wibus-wee/nextjs-ts-starter", "description": "Easy to create Next.JS projects with TS"},
-    { "icon": "./icon/react.svg", "name": "React.js TS Starter", "repo": "wibus-wee/react-ts-starter", "description": "A React + TypeScript Starter Template"},
-    { "icon": "./icon/typecho.svg", "name": "Typecho Plugin Template", "repo": "wibus-wee/Typecho-Plugin-Template", "description": "Eazy init Typecho Plugin repo"},
-    { "icon": "./icon/typecho.svg", "name": "Typecho Theme Template", "repo": "wibus-wee/Typecho-Theme-Template", "description": "it can easyly to make a typecho theme, but follow my Strategy"}
+    {
+      "icon": "./icon/ts.svg",
+      "name": "Typescript Starter",
+      "repo": "wibus-wee/starter-ts",
+      "description": "Starter template for TypeScript library"
+    },
+    {
+      "icon": "https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png",
+      "name": "Next.js TS Starter",
+      "repo": "wibus-wee/nextjs-ts-starter",
+      "description": "Easy to create Next.JS projects with TS"
+    },
+    {
+      "icon": "./icon/react.svg",
+      "name": "React.js TS Starter",
+      "repo": "wibus-wee/react-ts-starter",
+      "description": "A React + TypeScript Starter Template"
+    },
+    {
+      "icon": "./icon/typecho.svg",
+      "name": "Typecho Plugin Template",
+      "repo": "wibus-wee/Typecho-Plugin-Template",
+      "description": "Eazy init Typecho Plugin repo"
+    },
+    {
+      "icon": "./icon/typecho.svg",
+      "name": "Typecho Theme Template",
+      "repo": "wibus-wee/Typecho-Theme-Template",
+      "description": "it can easyly to make a typecho theme, but follow my Strategy"
+    }
   ],
   "Configurations": [
-    { "icon": "./icon/Sbar.svg", "name": "Sketchybar Dotfile", "repo": "wibus-wee/sketchybar-dotfile"}
+    {
+      "icon": "./icon/Sbar.svg",
+      "name": "Sketchybar Dotfile",
+      "repo": "wibus-wee/sketchybar-dotfile"
+    }
   ],
   "Participation": [
-    { "icon": "https://github.com/utmapp.png", "name": "UTM", "repo": "utmapp/utm", "description": "Running other operating systems on your iPhone or iPad"},
-    { "icon": "https://github.com/mx-space.png", "name": "mx-core", "repo": "mx-space/core", "description": "The next generation of RESTful API service and more feature for Mix Space, powered by @nestjs."},
-    { "icon": "https://github.com/zh-blogs.png", "name": "Blog DaoHang", "repo": "zh-blogs/blog-daohang", "description": "链接全部的中文独立博客"}
+    {
+      "icon": "https://github.com/utmapp.png",
+      "name": "UTM",
+      "repo": "utmapp/utm",
+      "description": "Running other operating systems on your iPhone or iPad"
+    },
+    {
+      "icon": "https://github.com/mx-space.png",
+      "name": "mx-core",
+      "repo": "mx-space/core",
+      "description": "The next generation of RESTful API service and more feature for Mix Space, powered by @nestjs."
+    },
+    {
+      "icon": "https://github.com/zh-blogs.png",
+      "name": "Blog DaoHang",
+      "repo": "zh-blogs/blog-daohang",
+      "description": "链接全部的中文独立博客"
+    }
   ]
 }
