@@ -152,6 +152,10 @@ a.item {
 }
 
 @media (prefers-color-scheme: dark) {
+  hr {
+    border-color: #2d2d2d !important;
+  }
+
   .prose {
     --tw-prose-headings: rgb(219, 218, 218)
   }
