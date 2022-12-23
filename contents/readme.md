@@ -1,10 +1,10 @@
-# Wibus <desc>-- A 16 yo. Uaena & Full Stack Developer. Working in <span>Mog</span> for magical blog system design</desc>
+# Wibus <desc>-- A 16 yo. Uaena & Full Stack Developer. Working in <span>Mog</span> and <span>Jwc.js</span> for a magical web world</desc>
 
 <hr class="hr" />
 
 ## Who am I?
 
-一位自称的钢琴演奏家和歌手. 曾是 [Typecho](https://typecho.org/) 的生态贡献者. 目前专注于 [Mog](https://github.com/mogland) 的开发工作。
+一位自称的钢琴演奏家和歌手. 曾是 [Typecho](https://typecho.org/) 的生态贡献者. 目前专注于 [Mog](https://github.com/mogland/core) 和 [Jwc.js](https://github.com/jwcjs/core)的开发工作。
 
 ## Now
 

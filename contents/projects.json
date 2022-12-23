@@ -1,4 +1,12 @@
 {
+  "CLI": [
+    {
+      "symbol": "B",
+      "name": "bump-monorepo",
+      "description": "A Command Line Tool to bump monorepo packages.",
+      "repo": "wibus-wee/bump-monorepo"
+    }
+  ],
   "Side Project": [
     {
       "icon": "./icon/chatgpt-for-bing.png",
