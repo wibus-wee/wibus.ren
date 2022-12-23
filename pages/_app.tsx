@@ -1,15 +1,16 @@
 import '../styles/globals.css'
+
 import { Router } from 'next/router'
+import QP from 'qier-progress'
 import { useCallback, useEffect, useRef } from 'react'
 import { message } from 'react-message-popup'
-import QP from 'qier-progress'
+
 import Header from '../components/layouts/Header'
-import Plum from '../components/widgets/Plum'
 import { Nav } from '../components/layouts/Nav'
+import Plum from '../components/widgets/Plum'
 import { preloadPlay } from '../utils/play.util'
 
 function App({ Component, pageProps }) {
-
   const Progress = new QP({ colorful: false, color: '#27ae60' })
   const registerRouterEvents = useCallback(() => {
     Router.events.on('routeChangeStart', () => {
@@ -52,18 +53,17 @@ function App({ Component, pageProps }) {
   }, [])
 
   return (
-    <div className='loading' ref={bodyRef}>
-      <div className='_iucky backdrop-blur-sm w-screen h-full'>
+    <div className="loading" ref={bodyRef}>
+      <div className="_iucky backdrop-blur-sm w-screen h-full">
         <Nav />
-          <Header />
-          <main className="py-10 z-50">
-            <Component {...pageProps} />
-          </main>
+        <Header />
+        <main className="py-10 z-50">
+          <Component {...pageProps} />
+        </main>
       </div>
-      <Plum />
+      {/* <Plum /> */}
     </div>
   )
 }
-
 
 export default App
