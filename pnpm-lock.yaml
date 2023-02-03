@@ -40,7 +40,7 @@ specifiers:
   react-use: 17.4.0
   rehype-raw: 6.1.1
   remark-gfm: 3.0.1
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   tailwindcss: 3.2.4
   typescript: 4.9.5
 
@@ -86,7 +86,7 @@ devDependencies:
   postcss: 8.4.21
   postcss-nesting: 11.1.0_postcss@8.4.21
   prettier: 2.8.3
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   tailwindcss: 3.2.4_postcss@8.4.21
   typescript: 4.9.5
 
@@ -5699,6 +5699,12 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf/4.1.2:
+    resolution: {integrity: sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.77.2:
