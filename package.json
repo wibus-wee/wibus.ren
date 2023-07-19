@@ -58,7 +58,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "cross-env": "7.0.3",
-    "framer-motion": "10.12.22",
+    "framer-motion": "10.12.23",
     "lodash-es": "4.17.21",
     "mobx": "6.9.1",
     "mobx-react-lite": "3.4.3",
