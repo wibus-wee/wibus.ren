@@ -27,8 +27,8 @@ dependencies:
     specifier: 13.4.12
     version: 13.4.12(@babel/core@7.18.10)(react-dom@18.2.0)(react@18.2.0)
   next-seo:
-    specifier: 6.0.0
-    version: 6.0.0(next@13.4.12)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 6.5.0
+    version: 6.5.0(next@13.4.12)(react-dom@18.2.0)(react@18.2.0)
   ohmyfetch:
     specifier: 0.4.21
     version: 0.4.21
@@ -5054,8 +5054,8 @@ packages:
       - webpack
     dev: true
 
-  /next-seo@6.0.0(next@13.4.12)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-jKKt1p1z4otMA28AyeoAONixVjdYmgFCWwpEFtu+DwRHQDllVX3RjtyXbuCQiUZEfQ9rFPBpAI90vDeLZlMBdg==}
+  /next-seo@6.5.0(next@13.4.12)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MfzUeWTN/x/rsKp/1n0213eojO97lIl0unxqbeCY+6pAucViHDA8GSLRRcXpgjsSmBxfCFdfpu7LXbt4ANQoNQ==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
