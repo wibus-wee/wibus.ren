@@ -76,7 +76,7 @@
   },
   "devDependencies": {
     "@innei-util/eslint-config-react-ts": "0.8.2",
-    "@innei/prettier": "0.9.11",
+    "@innei/prettier": "0.13.0",
     "@tailwindcss/typography": "0.5.9",
     "@types/lodash": "4.14.195",
     "@types/node": "18.17.0",
