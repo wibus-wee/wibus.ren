@@ -95,7 +95,7 @@
     "next-compose-plugins": "2.2.1",
     "next-pwa": "5.6.0",
     "postcss": "8.4.27",
-    "postcss-nesting": "11.2.2",
+    "postcss-nesting": "12.1.5",
     "prettier": "3.0.0",
     "rimraf": "5.0.1",
     "tailwindcss": "3.3.3",
