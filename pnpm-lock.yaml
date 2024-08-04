@@ -80,8 +80,8 @@ devDependencies:
     specifier: 18.2.7
     version: 18.2.7
   '@types/react-lazyload':
-    specifier: 3.2.0
-    version: 3.2.0
+    specifier: 3.2.3
+    version: 3.2.3
   '@types/react-syntax-highlighter':
     specifier: 15.5.7
     version: 15.5.7
@@ -1855,8 +1855,8 @@ packages:
       '@types/react': 18.2.16
     dev: true
 
-  /@types/react-lazyload@3.2.0:
-    resolution: {integrity: sha512-4+r+z8Cf7L/mgxA1vl5uHx5GS/8gY2jqq2p5r5WCm+nUsg9KilwQ+8uaJA3EUlLj57AOzOfGGwwRJ5LOVl8fwA==}
+  /@types/react-lazyload@3.2.3:
+    resolution: {integrity: sha512-s03gWlHXiFqZr7TEFDTx8Lkl+ZEYrwTkXP9MNZ3Z3blzsPrnkYjgeSK2tjfzVv/TYVCnDk6TZwNRDHQlHy/1Ug==}
     dependencies:
       '@types/react': 18.2.16
     dev: true
