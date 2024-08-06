@@ -61,7 +61,7 @@
     "framer-motion": "10.12.23",
     "lodash-es": "4.17.21",
     "mobx": "6.9.1",
-    "mobx-react-lite": "3.4.3",
+    "mobx-react-lite": "4.0.7",
     "next": "13.4.19",
     "next-seo": "6.0.0",
     "ohmyfetch": "0.4.21",
