@@ -87,7 +87,7 @@
     "autoprefixer": "10.4.20",
     "babel-plugin-module-resolver": "5.0.2",
     "clsx": "1.2.1",
-    "eslint": "8.45.0",
+    "eslint": "8.57.0",
     "eslint-config-next": "13.4.19",
     "husky": "8.0.3",
     "less": "4.1.3",
