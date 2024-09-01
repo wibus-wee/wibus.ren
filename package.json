@@ -63,7 +63,7 @@
     "mobx": "6.9.1",
     "mobx-react-lite": "3.4.3",
     "next": "13.4.19",
-    "next-seo": "6.0.0",
+    "next-seo": "6.6.0",
     "ohmyfetch": "0.4.21",
     "qier-progress": "1.0.4",
     "react": "18.2.0",
