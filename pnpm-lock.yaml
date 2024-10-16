@@ -18,11 +18,11 @@ dependencies:
     specifier: 4.17.21
     version: 4.17.21
   mobx:
-    specifier: 6.9.1
-    version: 6.9.1
+    specifier: 6.13.5
+    version: 6.13.5
   mobx-react-lite:
     specifier: 3.4.3
-    version: 3.4.3(mobx@6.9.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 3.4.3(mobx@6.13.5)(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 13.4.19
     version: 13.4.19(@babel/core@7.25.2)(react-dom@18.2.0)(react@18.2.0)
@@ -5624,7 +5624,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
-  /mobx-react-lite@3.4.3(mobx@6.9.1)(react-dom@18.2.0)(react@18.2.0):
+  /mobx-react-lite@3.4.3(mobx@6.13.5)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-NkJREyFTSUXR772Qaai51BnE1voWx56LOL80xG7qkZr6vo8vEaLF3sz1JNUVh+rxmUzxYaqOhfuxTfqUh0FXUg==}
     peerDependencies:
       mobx: ^6.1.0
@@ -5639,13 +5639,13 @@ packages:
       react-native:
         optional: true
     dependencies:
-      mobx: 6.9.1
+      mobx: 6.13.5
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /mobx@6.9.1:
-    resolution: {integrity: sha512-7V41hvBmzCQg5n/xoZi2qkhREbnF3wHbzbIdR1sLJhVt6yWq2Zq0FlNahEt/RccOmEIjipvBqeQ4mlOEyMhaaA==}
+  /mobx@6.13.5:
+    resolution: {integrity: sha512-/HTWzW2s8J1Gqt+WmUj5Y0mddZk+LInejADc79NJadrWla3rHzmRHki/mnEUH1AvOmbNTZ1BRbKxr8DSgfdjMA==}
     dev: false
 
   /mri@1.2.0:
